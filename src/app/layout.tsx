@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Wangjue's Zone",
-  description: "Here is Wanjue's Zone 2025, namely WZ25, for sharing and learning!",
+  description:
+    "Here is Wanjue's Zone 2025, namely WZ25, for sharing and learning!",
 };
 
 export default function RootLayout({
