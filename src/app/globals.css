@@ -6,6 +6,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --wz-dark-blue: #f30909;
+  --wz-nav-gray: #f9f9f9;
+  --wz-text-black: #171717; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +15,8 @@
     --background: #0a0a0a;
     --foreground: #ededed;
     --wz-dark-blue: #f30909;
+    --wz-nav-gray: #f9f9f9;
+    --wz-text-black: #171717; 
   }
 }
 

@@ -6,8 +6,8 @@ export default function ProfilePage() {
 
     return (
         <div>
+            <NavBar/>
             <h1>Profile Page</h1>
-            <NavBar page="profile" />
             <Link href="/">Back</Link>
         </div>
     );
