@@ -1,4 +1,6 @@
-
+import Link from "next/link";
+import { NAV_LINKS_HOME } from "./constants";
+import ThemeSwitch from "../ui/ThemeSwitch";
 
 interface LeftNavProps {
     page: string;
@@ -6,8 +8,11 @@ interface LeftNavProps {
 
 const LeftNav = ({page}: LeftNavProps) => {
     return (
-        <div className="text-lg font-bold">
-            Jue Wang
+        <div className="flex items-center px-4">
+            <div className="py-5 px-3 relative group">
+                <p className="">JUE WANG</p>
+            </div>
+            <ThemeSwitch />
         </div>
     );
 };

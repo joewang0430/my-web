@@ -8,11 +8,13 @@ export const NAV_LINKS_HOME = [
         href: "/projects",
     },
     {
-        name: "Experience",
-        href: "/experience",
+        name: "Contact",
+        href: "/contact",
     },
     {
         name: "Resume",
         href: "/resume.pdf",
     },
 ];
+
+// main: Projects | Resume | Contact | Gallery

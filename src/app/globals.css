@@ -5,18 +5,28 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --wz-dark-blue: #f30909;
-  --wz-nav-gray: #f9f9f9;
+  --wz-classic-blue: #19336b;
+  --wz-secondary-blue: #8799c2;
+  --wz-light-gray: #f9f9f9;
   --wz-text-black: #171717; 
+  --wz-classic-black: #171717;
+  --wz-classic-white: #ffffff;
+  --wz-classic-green: #5faf5f;
+  --wz-secondary-green: #c8e6c9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --wz-dark-blue: #f30909;
-    --wz-nav-gray: #f9f9f9;
+    --wz-classic-blue: #19336b;
+    --wz-secondary-blue: #8799c2;
+    --wz-light-gray: #f9f9f9;
     --wz-text-black: #171717; 
+    --wz-classic-black: #171717;
+    --wz-classic-white: #ffffff;
+    --wz-classic-green: #5faf5f;
+    --wz-secondary-green: #c8e6c9;
   }
 }
 
