@@ -27,7 +27,7 @@ const RightMenu = ({page}: RightMenuProps) => {
             </div>
 
             {isOpen && (
-            <div className="absolute top-16 right-0 bg-wz-light-gray dark:bg-wz-classic-black w-40 p-4">
+            <div className="absolute top-16 right-0 bg-wz-light-gray dark:bg-wz-classic-black w-40 pl-12">
                 {NAV_LINKS_HOME.map((link) => (
                     <Link href={link.href} key={link.href} className="py-2 px-3">
                         <p className="hover:text-wz-secondary-blue dark:hover:text-wz-classic-green transition-colors duration-300">

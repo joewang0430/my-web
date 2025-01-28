@@ -8,22 +8,19 @@ import LeftNav from "./components/LeftNav";
 
 const NavBar = () => {
     const pathname = usePathname();
-    const [pageName, setpageName] = useState<"home" | "subpage" | "profile" | "gallery">("home");
+    const [pageName, setpageName] = useState<"home" | "profile" | "gallery" | "gallerySubpage" | "homeSubpage">("home");
 
     useEffect(() => {
-        switch (pathname) {
-            case "/":
-                setpageName("home");
-                break;
-            case "/profile":
-                setpageName("profile");
-                break;
-            case "/gallery":
-                setpageName("gallery");
-                break;
-            default:
-                setpageName("subpage");
-                break;
+        if (pathname === "/") {
+            setpageName("home");
+        } else if (pathname === "/profile") {
+            setpageName("profile");
+        } else if (pathname === "/gallery") {
+            setpageName("gallery");
+        } else if (pathname.startsWith("/gallery/")) {
+            setpageName("gallerySubpage");
+        } else {
+            setpageName("homeSubpage");
         }
     }, [pathname]);
 
@@ -33,10 +30,10 @@ const NavBar = () => {
                 <LeftNav page={pageName} />
 
                 <div className="hidden md:flex">
-                    <RightNav page={pageName} />
+                    <RightNav page={pageName} path={pathname} />
                 </div>
                 <div className="md:hidden">
-                    <RightMenu page={pageName} />
+                    <RightMenu page={pageName}/>
                 </div>
             </nav>
         </header>
