@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { NAV_LINKS_HOME } from "./constants";
 import ThemeSwitch from "../ui/ThemeSwitch";
 import NameNav from "../ui/NameNav";
 

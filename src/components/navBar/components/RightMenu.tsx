@@ -2,7 +2,8 @@ import { useState } from "react";
 import Link from "next/link";
 import ProfileNav from "../ui/ProfileNav";
 import HomeNav from "../ui/HomeNav";
-import { NAV_LINKS_HOME, NAV_LINKS_PROFILE } from "./constants";
+import RightMenuList from "./rightMenu/RightMenuList";
+import { NAV_LINKS_HOME, NAV_LINKS_PROFILE } from "../data/constants";
 
 
 interface RightMenuProps {
@@ -30,15 +31,7 @@ const RightMenu = ({page}: RightMenuProps) => {
                 </div>
 
                 {isOpen && (
-                <div className="absolute top-16 right-0 bg-wz-light-gray dark:bg-wz-classic-black w-40 pl-12">
-                    {NAV_LINKS_HOME.map((link) => (
-                        <Link href={link.href} key={link.href} className="py-2 px-3">
-                            <p className="hover:text-wz-secondary-blue dark:hover:text-wz-classic-green transition-colors duration-300">
-                                {link.name}
-                            </p>
-                        </Link>
-                    ))}
-                </div>
+                <RightMenuList list={NAV_LINKS_HOME} />
                 )}
             </div>
         );
@@ -55,15 +48,7 @@ const RightMenu = ({page}: RightMenuProps) => {
                 </div>
 
                 {isOpen && (
-                <div className="absolute top-16 right-0 bg-wz-light-gray dark:bg-wz-classic-black w-40 pl-12">
-                    {NAV_LINKS_PROFILE.map((link) => (
-                        <Link href={link.href} key={link.href} className="py-2 px-3">
-                            <p className="hover:text-wz-secondary-blue dark:hover:text-wz-classic-green transition-colors duration-300">
-                                {link.name}
-                            </p>
-                        </Link>
-                    ))}
-                </div>
+                <RightMenuList list={NAV_LINKS_PROFILE} />
                 )}
             </div>
         );
