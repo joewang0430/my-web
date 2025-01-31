@@ -1,18 +1,46 @@
+"use client";
+
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import HomeNav from "../../ui/HomeNav";
 import { NAV_LINKS_PROFILE } from '../../data/constants';
 
-interface RightNavProfileProps {
-    path: string;
-};
+const RightNavProfile = () => {
 
-const RightNavProfile = ({path}: RightNavProfileProps) => {
+    const [activeSection, setActiveSection] = useState("");
+
+    useEffect(() => {
+        const observerOptions = {
+            root: null,
+            rootMargin: "-50% 0px -50% 0px",
+            threshold: 0,
+          };
+          
+          const observerCallback = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const id = entry.target.id;
+                setActiveSection(id);
+                window.history.replaceState(null, "", `#${id}`); 
+              }
+            });
+          };
+    
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section) => observer.observe(section));
+    
+        return () => {
+          sections.forEach((section) => observer.unobserve(section));
+        };
+      }, []);
+
     return (
         <div className="flex items-center">
-            {NAV_LINKS_PROFILE.map(({ name, href }) => (
+            {NAV_LINKS_PROFILE.map(({ name, href, id }) => (
                 <Link href={href} key={href} className="py-5 px-6 relative group">
                     
-                    {href === path ? (
+                    {activeSection === id ? (
                         <>
                             <p className="relative z-10 text-wz-classic-white dark:text-wz-classic-black">
                                 {name}

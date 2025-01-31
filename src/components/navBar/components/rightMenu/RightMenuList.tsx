@@ -3,6 +3,7 @@ import Link from "next/link";
 interface NavItem {
     name: string;
     href: string;
+    id?: string;
 };
 
 interface RightMenuListProps {

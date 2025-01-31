@@ -10,6 +10,7 @@ export const NAV_LINKS_HOME = [
     {
         name: "Contact",
         href: "#contact",
+        id: "contact",
     },
     {
         name: "Resume",
@@ -58,18 +59,22 @@ export const NAV_LINKS_PROFILE = [
     {
         name: "About",
         href: "#about",
+        id: "about",
     },
     {
         name: "Skills",
         href: "#skills",
+        id: "skills",
     },
     {
         name: "Experience",
         href: "#experience",
+        id: "experience",
     },
     {
         name: "Projects",
         href: "#projects",
+        id: "projects",
     },
     {
         name: "Resume",
@@ -85,18 +90,22 @@ export const NAV_LINKS_GALLERY = [
     {
         name: "Hobbies",
         href: "/gallery/hobbies",
+        id: "hobbies",
     },
     {
         name: "Blogs",
         href: "/gallery/blogs",
+        id: "blogs",
     },
     {
         name: "Friends",
         href: "/gallery/friends",
+        id: "friends",
     },
     {
         name: "Pthotos",
         href: "/gallery/photos",
+        id: "photos",
     },
 ];
 
