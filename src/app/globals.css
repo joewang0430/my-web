@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');/**/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +16,8 @@
   --wz-classic-white: #ffffff;
   --wz-classic-green: #5faf5f;
   --wz-secondary-green: #c8e6c9;
+  --encode-sans-sc: 'Encode Sans SC', sans-serif; /* Add the font variable */
+  --exo-2: 'Exo 2', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,11 +32,13 @@
     --wz-classic-white: #ffffff;
     --wz-classic-green: #5faf5f;
     --wz-secondary-green: #c8e6c9;
+    --encode-sans-sc: 'Encode Sans SC', sans-serif; /* Add the font variable */
+    --exo-2: 'Exo 2', sans-serif;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif, var(--font-encode-sans-sc); /* Add the font variable */
 }

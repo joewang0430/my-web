@@ -8,8 +8,11 @@ const NameNav = ({page}: NameNavProps) => {
 
     if (page === "home") {
         return (
-            <div className="py-5 px-3 relative group">
-                <Link href="#homeMain" className="">JUE WANG</Link>
+            <div className="relative group">
+                <Link href="#homeMain" className="py-5 px-3 text-2xl font-encode-sans-sc text-wz-classic-blue dark:text-wz-classic-green hover:text-wz-secondary-blue dark:hover:text-wz-secondary-green"> 
+                {/* hover:text-wz-secondary-blue dark:hover:text-wz-secondary-green */}
+                    Jue Wang
+                </Link>
             </div>
         );
     } else if (page === "homeSubpage") {

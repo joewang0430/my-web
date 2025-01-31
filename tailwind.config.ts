@@ -10,6 +10,10 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        'encode-sans-sc': ['var(--encode-sans-sc)', 'sans-serif'], // Add the font family
+        'exo-2': ['var(--exo-2)', 'sans-serif'], 
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
