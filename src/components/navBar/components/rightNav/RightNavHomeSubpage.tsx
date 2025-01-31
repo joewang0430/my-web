@@ -1,15 +1,15 @@
 import Link from "next/link";
 import HomeNav from "../../ui/HomeNav";
-import { NAV_LINKS_PROFILE } from '../../data/constants';
+import { NAV_LINKS_HOME_SUBPAGE } from '../../data/constants';
 
-interface RightNavProfileProps {
+interface RightNavHomeSubpageProps {
     path: string;
 };
 
-const RightNavProfile = ({path}: RightNavProfileProps) => {
+const RightNavHomeSubpage = ({path}: RightNavHomeSubpageProps) => {
     return (
         <div className="flex items-center">
-            {NAV_LINKS_PROFILE.map(({ name, href }) => (
+            {NAV_LINKS_HOME_SUBPAGE.map(({ name, href }) => (
                 <Link href={href} key={href} className="py-5 px-6 relative group">
                     
                     {href === path ? (
@@ -34,4 +34,4 @@ const RightNavProfile = ({path}: RightNavProfileProps) => {
     );
 };
 
-export default RightNavProfile;
+export default RightNavHomeSubpage;

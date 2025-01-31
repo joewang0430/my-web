@@ -19,7 +19,7 @@ const NavBar = () => {
             setpageName("gallery");
         } else if (pathname.startsWith("/gallery/")) {
             setpageName("gallerySubpage");
-        } else if (pathname.startsWith("/home/")) {
+        } else if (pathname.startsWith("/")) {
             setpageName("homeSubpage");
         }
 
