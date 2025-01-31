@@ -22,21 +22,21 @@ const NameNav = ({page}: NameNavProps) => {
     } else if (page === "profile") {
         return (
             <div className="py-5 px-3 relative group">
-                <Link href="#about" className="">Joe's Profile</Link>
+                <Link href="#about" className="">Joe&apos;s Profile</Link>
             </div>
         );
 
     } else if (page === "gallery") {
         return (
             <div className="py-5 px-3 relative group">
-                <Link href="#galleryMain" className="">Joe's Gallery</Link>
+                <Link href="#galleryMain" className="">Joe&apos;s Gallery</Link>
             </div>
         );
 
     } else if (page === "gallerySubpage") {
         return (
             <div className="py-5 px-3 relative group">
-                <Link href="/gallery" className="">Joe's Gallery</Link>
+                <Link href="/gallery" className="">Joe&apos;s Gallery</Link>
             </div>
         );
     }
