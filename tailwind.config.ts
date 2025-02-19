@@ -13,6 +13,7 @@ export default {
       fontFamily: {
         'encode-sans-sc': ['var(--encode-sans-sc)', 'sans-serif'], // Add the font family
         'exo-2': ['var(--exo-2)', 'sans-serif'], 
+        'funnel-display': ['var(--funnel-display)', 'sans-serif'],
       },
       colors: {
         background: "var(--background)",

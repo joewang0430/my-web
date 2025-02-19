@@ -1,5 +1,3 @@
-Hello to who is reading. / 你好，陌生人。  
-
 This is my personal website. Please contact me if you find somewhere for improvement. I would be happy to hear your advice. 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
