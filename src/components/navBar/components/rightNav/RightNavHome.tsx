@@ -2,11 +2,12 @@ import Link from "next/link";
 import ProfileNav from "../../ui/ProfileNav";
 import { NAV_LINKS_HOME } from '../../data/constants';
 
-interface RightNavHomeProps {
-    path: string;
-};
+// interface RightNavHomeProps {
+//     path: string;
+// };
 
-const RightNavHome = ({path}: RightNavHomeProps) => {
+//const RightNavHome = ({path}: RightNavHomeProps) => {
+const RightNavHome = () => {
     return (
         <div className="flex items-center">
             {NAV_LINKS_HOME.map(({ name, href }) => (

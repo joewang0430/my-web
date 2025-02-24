@@ -89,22 +89,22 @@ export const NAV_LINKS_GALLERY = [
     },
     {
         name: "Hobbies",
-        href: "/gallery/hobbies",
+        href: "/gallery#hobbies",
         id: "hobbies",
     },
     {
         name: "Blogs",
-        href: "/gallery/blogs",
+        href: "/gallery#blogs",
         id: "blogs",
     },
     {
         name: "Friends",
-        href: "/gallery/friends",
+        href: "/gallery#friends",
         id: "friends",
     },
     {
         name: "Pthotos",
-        href: "/gallery/photos",
+        href: "/gallery#photos",
         id: "photos",
     },
 ];

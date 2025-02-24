@@ -18,6 +18,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "wz-main-color": "var(--wz-main-color)",
+        "wz-text-color": "var(--wz-text-color)",
+        "wz-bg-color": "var(--wz-bg-color)",
         "wz-classic-blue": "var(--wz-classic-blue)",
         "wz-secondary-blue": "var(--wz-secondary-blue)",
         "wz-light-gray": "var(--wz-light-gray)",

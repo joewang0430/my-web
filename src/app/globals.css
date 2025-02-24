@@ -9,6 +9,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --wz-main-color: #19336b;
+  --wz-text-color: #171717;
+  --wz-bg-color: #f9f9f9;
+
   --wz-classic-blue: #19336b;
   --wz-secondary-blue: #8799c2;
   --wz-light-gray: #f9f9f9;
@@ -22,10 +26,20 @@
   --funnel-display: 'Funnel Display', sans-serif;
 }
 
+.dark {
+  --wz-main-color: #5faf5f;
+  --wz-text-color: #ededed;
+  --wz-bg-color: #272727;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --wz-main-color: #5faf5f;
+    --wz-text-color: #ededed;
+    --wz-bg-color: #0a0a0a;
+
     --wz-classic-blue: #19336b;
     --wz-secondary-blue: #8799c2;
     --wz-light-gray: #f9f9f9;
