@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');/**/
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -24,6 +25,7 @@
   --encode-sans-sc: 'Encode Sans SC', sans-serif; /* Add the font variable */
   --exo-2: 'Exo 2', sans-serif;
   --funnel-display: 'Funnel Display', sans-serif;
+  --mplus-1p: 'M PLUS 1p', sans-serif;
 }
 
 .dark {
@@ -51,6 +53,7 @@
     --encode-sans-sc: 'Encode Sans SC', sans-serif; /* Add the font variable */
     --exo-2: 'Exo 2', sans-serif;
     --funnel-display: 'Funnel Display', sans-serif;
+    --mplus-1p: 'M PLUS 1p', sans-serif;
   }
 }
 

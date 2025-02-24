@@ -10,7 +10,7 @@ const RightNavHomeSubpage = ({path}: RightNavHomeSubpageProps) => {
     return (
         <div className="flex items-center">
             {NAV_LINKS_HOME_SUBPAGE.map(({ name, href }) => (
-                <Link href={href} key={href} className="py-5 px-6 relative group">
+                <Link href={href} key={href} className="py-5 px-6 relative group font-wf-theme">
                     
                     {href === path ? (
                         <>

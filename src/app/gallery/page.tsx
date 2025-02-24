@@ -5,7 +5,7 @@ const GalleryPage = () => {
     return (
         <div className="flex flex-col w-full mx-auto">
             <section className="bg-wz-bg-color h-screen flex flex-col items-center justify-center">
-                <h1 className="text-3xl text-wz-main-color">The galary page will be there soon!</h1>
+                <h1 className="font-funnel-display text-3xl text-wz-main-color">The galary page will be there soon!</h1>
                 <div className="h-8"></div>
                 <h2 className="text-wz-text-color">Currently there is no enought time for me to finish the gallery page</h2>
                 <div className="flex">

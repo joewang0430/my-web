@@ -39,7 +39,7 @@ const RightNavGallery = () => {
       return (
         <div className="flex items-center">
             {NAV_LINKS_GALLERY.map(({ name, href, id }) => (
-                <Link href={href} key={href} className="py-5 px-6 relative group">
+                <Link href={href} key={href} className="py-5 px-6 relative group font-wf-theme">
                     
                     {activeSection === id ? (
                         <>

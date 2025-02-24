@@ -15,7 +15,7 @@ interface RightNavProps {
 const RightNav = ({ page, path }: RightNavProps) => {
 
     if (page === "home") {
-        return <RightNavHome path={path} />;
+        return <RightNavHome/>;
 
     } else if (page === "homeSubpage") {
         return <RightNavHomeSubpage path={path} />;
