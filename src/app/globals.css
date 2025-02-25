@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');/**/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 
@@ -7,10 +7,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @media dark colors need to be corrected */
+/* some previously set color variable (none wz-main-color) need to be changed */
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --wz-main-color: #19336b;
+  --wz-secondary-color: #8799c2;
   --wz-text-color: #171717;
   --wz-bg-color: #f9f9f9;
 
@@ -21,7 +24,7 @@
   --wz-classic-black: #171717;
   --wz-classic-white: #ffffff;
   --wz-classic-green: #5faf5f;
-  --wz-secondary-green: #c8e6c9;
+  --wz-secondary-green: #92cd93;/*#c8e6c9;*/
   --encode-sans-sc: 'Encode Sans SC', sans-serif; /* Add the font variable */
   --exo-2: 'Exo 2', sans-serif;
   --funnel-display: 'Funnel Display', sans-serif;
@@ -32,6 +35,7 @@
   --wz-main-color: #5faf5f;
   --wz-text-color: #ededed;
   --wz-bg-color: #272727;
+  --wz-secondary-color: #92cd93;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,6 +45,7 @@
     --wz-main-color: #5faf5f;
     --wz-text-color: #ededed;
     --wz-bg-color: #0a0a0a;
+    --wz-secondary-color: #92cd93;
 
     --wz-classic-blue: #19336b;
     --wz-secondary-blue: #8799c2;

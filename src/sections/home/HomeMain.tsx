@@ -1,3 +1,6 @@
+import ProfileButton from "@/components/general/ui/ProfileButton";
+import ResumeButton from "@/components/general/ui/ResumeButton";
+
 const HomeMain = () => {
     return (
         <section id="homemain" className="flex items-center justify-center bg-wz-bg-color h-screen">
@@ -11,9 +14,14 @@ const HomeMain = () => {
                     <h1 className="mt-4 text-7xl font-bold text-wz-main-color font-funnel-display">
                         This is Joe.
                     </h1>
-                    <p className="mt-8 text-xl text-wz-text-color font-wf-theme">
+                    <p className="mt-8 mb-12 text-xl text-wz-text-color font-wf-theme">
                         My name is Jue Wang (Joe), a 2nd year computer engineering student at University of Toronto.
                     </p>
+                    <div className="flex flex-row space-x-4">
+                        <ProfileButton />   
+                        <ResumeButton />
+                    </div>
+                    
                 </div>
                 
                 {/* Right Column: Figure/Image Placeholder */}

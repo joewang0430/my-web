@@ -9,7 +9,7 @@ const GalleryPage = () => {
                 <div className="h-8"></div>
                 <h2 className="text-wz-text-color">Currently there is no enought time for me to finish the gallery page</h2>
                 <div className="flex">
-                    <h2 className="text-wz-text-color">It is scheduled to be done befor </h2>
+                    <h2 className="text-wz-text-color">It is scheduled to be done before </h2>
                     <h2 className="text-wz-text-color font-bold">&nbsp;May 10, 2025</h2>
                 </div>
                 <div className="h-4"></div>
