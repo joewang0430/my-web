@@ -26,7 +26,8 @@ export default {
         "wz-secondary-color": "var(--wz-secondary-color)",
         "wz-text-color": "var(--wz-text-color)",
         "wz-bg-color": "var(--wz-bg-color)",
-        
+        "wz-abs-color": "var(--wz-abs-color)",
+
         "wz-classic-blue": "var(--wz-classic-blue)",
         "wz-secondary-blue": "var(--wz-secondary-blue)",
         "wz-light-gray": "var(--wz-light-gray)",

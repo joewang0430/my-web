@@ -7,9 +7,16 @@ const LinkedInTag = () => {
         href="https://www.linkedin.com/in/jue-wang-248984291/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-wz-main-color"
-        >
-            <FaLinkedin size={30} />
+        className="
+                inline-flex items-center justify-center 
+                w-10 h-10 
+                bg-wz-abs-color text-wz-main-color hover:text-wz-classic-white
+                rounded-full 
+                hover:bg-wz-secondary-color
+                transition-colors duration-300
+              "
+            >
+              <FaLinkedin size={18} />
         </Link>
     );
 };
