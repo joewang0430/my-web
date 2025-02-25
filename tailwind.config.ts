@@ -16,7 +16,7 @@ export default {
         'funnel-display': ['var(--funnel-display)', 'sans-serif'],
         'mplus-1p': ['var(--mplus-1p)', 'sans-serif'],
 
-        'wf-theme': ['var(--mplus-1p)', 'sans-serif'],
+        'wf-theme': ['var(--open-sans)', 'sans-serif'],
         'wf-title': ['var(--funnel-display)', 'sans-serif'],
       },
       colors: {
