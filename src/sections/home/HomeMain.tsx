@@ -1,5 +1,9 @@
 import ProfileButton from "@/components/general/ui/ProfileButton";
 import ResumeButton from "@/components/general/ui/ResumeButton";
+import EmailTag from "@/components/general/ui/EmailTag";
+import GitHubTag from "@/components/general/ui/GitHubTag";
+import LinkedInTag from "@/components/general/ui/LinkedInTag";
+import InstagramTag from "@/components/general/ui/InstagramTag";
 
 const HomeMain = () => {
     return (
@@ -20,6 +24,12 @@ const HomeMain = () => {
                     <div className="flex flex-row space-x-4">
                         <ProfileButton />   
                         <ResumeButton />
+                    </div>
+                    <div className="mt-8 flex flex-row space-x-6">
+                        <EmailTag />
+                        <GitHubTag />
+                        <LinkedInTag />
+                        <InstagramTag />
                     </div>
                     
                 </div>
