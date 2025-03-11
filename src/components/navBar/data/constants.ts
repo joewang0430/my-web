@@ -1,11 +1,11 @@
 export const NAV_LINKS_HOME = [
     {
         name: "About Me",
-        href: "/about",
+        href: "/profile#about",
     },
     {
         name: "Projects",
-        href: "/projects",
+        href: "/profile#projects",
     },
     {
         name: "Contact",

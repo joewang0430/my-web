@@ -10,12 +10,12 @@ const About = () => {
                     <h1 className="text-5xl font-bold text-wz-main-color font-funnel-display">Jue Wang 王珏</h1>
                     
                     <p className="text-wz-text-color mt-8 font-wf-theme text-lg">
-                        I'm a computer engineering undergraduate (2nd year ECE) at University of Toronto. My work focuses on sofewre development. 
+                        I&apos;m a computer engineering undergraduate (2nd year ECE) at University of Toronto. My work focuses on sofewre engineering. 
                         Specifically, I hope further work on ML / Full-Stack / Mobile Dev.
                     </p>
                     <p className="text-lg mt-4">
                         <span className="font-wf-theme text-wz-text-color">
-                            I can write .py .cpp .js .a .tsx ... files, along with some frameworks. Maybe you've grown tired of hearing these buzzwords in other resumes. If so, check my&nbsp;
+                            I can write .py .cpp .js .a .tsx ... files, along with some frameworks. Maybe you&apos;ve grown tired of hearing these buzzwords in other resumes. If so, check my&nbsp;
                         </span>
                         <Link
                             href="#skills"
@@ -24,7 +24,7 @@ const About = () => {
                             skills
                         </Link>
                         <span className="font-wf-theme text-wz-text-color">
-                            &nbsp;to see if there's something new.
+                            &nbsp;to see if there&apos;s something new.
                         </span>
                     </p>
                     <p className="text-wz-text-color font-wf-theme text-lg mt-4">
