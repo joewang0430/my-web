@@ -12,8 +12,10 @@ const RightNavProfile = () => {
     useEffect(() => {
         const observerOptions = {
             root: null,
-            rootMargin: "-50% 0px -50% 0px",
+            rootMargin: "-40% 0px -50% 0px",
             threshold: 0,
+            // rootMargin: "0px", // or use a smaller margin
+            // threshold: 0.1,    // a low threshold so even a small portion counts
           };
           
           const observerCallback = (entries: IntersectionObserverEntry[]) => {

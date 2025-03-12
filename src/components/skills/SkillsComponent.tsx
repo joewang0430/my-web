@@ -28,8 +28,10 @@ export default function SkillsComponent({
         rounded-lg 
         border-2 
         border-wz-main-color
-        bg-wz-abs-color
+        bg-wz-classic-white
+        dark:bg-wz-secondary-green
         hover:bg-wz-secondary-color
+        dark:hover:bg-wz-third-green
         transition-colors 
         duration-300
       "
