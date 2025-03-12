@@ -7,6 +7,9 @@ interface ProjectsComponentProps {
   gitHub?: string;       
   linkPath: string;   
   skills: string[];
+  time: string;
+  amount: number;
+  softness: number;
 }
 
 
@@ -16,9 +19,12 @@ const ProjectsComponent = ({
   description,
   gitHub,
   linkPath,
-  skills
+  skills,
+  time,
+  amount,
+  softness,
  }: ProjectsComponentProps) => {
-  const skillss: string[] = ["React", "Next.js", "TailwindCSS", "TypeScript"];
+  // const skillss: string[] = ["React", "Next.js", "TailwindCSS", "TypeScript"];
   return (
     <div 
     className="
@@ -27,7 +33,6 @@ const ProjectsComponent = ({
         flex 
         flex-col
         w-96
-        h-[28rem]
         rounded-3xl
         border-4
         border-wz-main-color
@@ -38,18 +43,23 @@ const ProjectsComponent = ({
         overflow-hidden
       ">
       {/* Picture */}
-      <div className="w-[99%] h-[12rem] mb-4 overflow-hidden mx-auto">
-          <img
-            src="/projects/1.jpg"
-            alt="title"
-            className="w-full h-full object-cover"
-          />
+      <div className="relative w-[99%] h-[12rem] mb-4 overflow-hidden mx-auto">
+        <img
+          src={`/projects/${imagePath}`}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+        {gitHub && (
+          <div className="absolute top-2 right-2 z-10">
+            <ProjectGitHub linkPath={gitHub} />
+          </div>
+        )}
       </div>
 
       {/* Title with underline effect */}
       <h2 className="text-3xl font-bold font-wf-title text-wz-main-color mb-2">
         <span className="relative inline-block">
-          Hello World Test
+          {title}
           <span
             className="
               absolute left-0 bottom-0 h-1 w-0 bg-wz-secondary-color 
@@ -62,15 +72,14 @@ const ProjectsComponent = ({
 
       {/* Description */}
       <p className="text-wz-text-color font-wf-theme mb-4 leading-relaxed">
-        This is a test project. continue to write some description here. continue
-       te some description here. 
+        {description}
       </p>
 
       
 
       {/* Skills */}
       <div className="mt-auto flex flex-wrap gap-2">
-        {skillss.map((skill) => (
+        {skills.map((skill) => (
           <span
             key={skill}
             className="
