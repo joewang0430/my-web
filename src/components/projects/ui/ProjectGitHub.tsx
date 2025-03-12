@@ -14,7 +14,7 @@ const ProjectGitHub = ({ linkPath }: ProjectGitHubProps) => {
       className="
                 inline-flex items-center justify-center 
                 w-10 h-10 
-                bg-wz-main-color text-wz-bg-color hover:text-wz-classic-white
+                bg-wz-classic-blue dark:bg-wz-secondary-green text-wz-bg-color hover:text-wz-classic-white
                 rounded-full 
                 hover:bg-wz-secondary-color
                 transition-colors duration-300

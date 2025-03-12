@@ -24,39 +24,39 @@ const ProjectsDisplay = () => {
   return (
     <div>
       {/* Sort order controls */}
-      <div className="mb-4">
-        <label className="mr-4">
+      <div className="mb-8 flex flex-col gap-4">
+        <label className="mr-4 font-wf-title text-xl text-wz-text-color font-bold">
           <input
             type="radio"
             name="sortOrder"
             value="newest"
             checked={sortOrder === "newest"}
             onChange={() => setSortOrder("newest")}
-            className="mr-1"
+            className="mr-1 accent-wz-secondary-color"
           />
-          Newest
+          Newest &rarr; Oldest
         </label>
-        <label className="mr-4">
+        <label className="mr-4 font-wf-title text-xl text-wz-text-color font-bold">
           <input
             type="radio"
             name="sortOrder"
             value="largest"
             checked={sortOrder === "largest"}
             onChange={() => setSortOrder("largest")}
-            className="mr-1"
+            className="mr-1 accent-wz-secondary-color"
           />
-          Largest
+          Largest &rarr; Smallest
         </label>
-        <label>
+        <label className="mr-4 font-wf-title text-xl text-wz-text-color font-bold">
           <input
             type="radio"
             name="sortOrder"
             value="sofest"
             checked={sortOrder === "sofest"}
             onChange={() => setSortOrder("sofest")}
-            className="mr-1"
+            className="mr-1 accent-wz-secondary-color"
           />
-          Sofest
+          Sofeware-centric &rarr; Hardware-centric
         </label>
       </div>
 
