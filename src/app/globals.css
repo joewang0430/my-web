@@ -28,6 +28,7 @@
   --wz-classic-green: #5faf5f;
   --wz-secondary-green: #92cd93;/*#c8e6c9;*/
   --wz-third-green: #c8ecc8;
+  --wz-third-blue: #edf0f8;
   --encode-sans-sc: 'Encode Sans SC', sans-serif; /* Add the font variable */
   --exo-2: 'Exo 2', sans-serif;
   --funnel-display: 'Funnel Display', sans-serif;
@@ -62,6 +63,7 @@
     --wz-classic-green: #5faf5f;
     --wz-secondary-green: #c8e6c9;
     --wz-third-green: #c8ecc8;
+    --wz-third-blue: #edf0f8;
     --encode-sans-sc: 'Encode Sans SC', sans-serif; /* Add the font variable */
     --exo-2: 'Exo 2', sans-serif;
     --funnel-display: 'Funnel Display', sans-serif;

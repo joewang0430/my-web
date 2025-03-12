@@ -30,7 +30,7 @@ export default function SkillsComponent({
         border-wz-main-color
         bg-wz-classic-white
         dark:bg-wz-secondary-green
-        hover:bg-wz-secondary-color
+        hover:bg-wz-third-blue
         dark:hover:bg-wz-third-green
         transition-colors 
         duration-300

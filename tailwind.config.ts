@@ -37,6 +37,7 @@ export default {
         "wz-classic-green": "var(--wz-classic-green)",
         "wz-secondary-green": "var(--wz-secondary-green)",
         "wz-third-green": "var(--wz-third-green)",
+        "wz-third-blue": "var(--wz-third-blue)",
       },
     },
   },
