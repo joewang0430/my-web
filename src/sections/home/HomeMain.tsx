@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ProfileButton from "@/components/general/ui/ProfileButton";
 import ResumeButton from "@/components/general/ui/ResumeButton";
 import EmailTag from "@/components/general/ui/EmailTag";
@@ -35,8 +36,24 @@ const HomeMain = () => {
                 </div>
                 
                 {/* Right Column: Figure/Image Placeholder */}
-                <div className="w-full lg:w-1/2 flex items-center justify-center">
-                    <div className="w-64 h-64 bg-gray-300 rounded-lg" />
+                {/* Right Column: Figure/Image Placeholder */}
+                <div className="hidden lg:flex w-full lg:w-1/2 items-center justify-center">
+                {/* Light mode image */}
+                <Image
+                    src="/main1.png"
+                    alt="Main image"
+                    width={256}
+                    height={256}
+                    className="rounded-lg dark:hidden"
+                />
+                {/* Dark mode image */}
+                <Image
+                    src="/main2.png"
+                    alt="Main image (dark mode)"
+                    width={256}
+                    height={256}
+                    className="rounded-lg hidden dark:block"
+                />
                 </div>
             </div>
 

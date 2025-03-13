@@ -24,7 +24,7 @@ const NameNav = ({page}: NameNavProps) => {
 
     } else if (page === "profile") {
         return (
-            <div className="py-5 px-3 relative group">
+            <div className="py-5 px-3 relative group text-2xl font-wf-title text-wz-main-color">
                 <Link href="#about" className="">Joe&apos;s Profile</Link>
             </div>
         );

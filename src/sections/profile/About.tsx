@@ -11,7 +11,7 @@ const About = () => {
                     
                     <p className="text-wz-text-color mt-8 font-wf-theme text-lg">
                         I&apos;m a computer engineering undergraduate (2nd year ECE) at University of Toronto. My work focuses on sofewre engineering. 
-                        Specifically, I hope further work on ML / Full-Stack / Mobile Dev.
+                        Currently, I am looking for a 2025 summer research.
                     </p>
                     <p className="text-lg mt-4">
                         <span className="font-wf-theme text-wz-text-color">
