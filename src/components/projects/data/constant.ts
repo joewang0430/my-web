@@ -49,7 +49,7 @@ export const PROJECTS_LIST = [
         description: "A visualizaiton system using OpenCV to capture human postures and display them in 3D on a webpage.",
         gitHub: "https://github.com/joewang0430/protracc-co",
         linkPath: "",
-        skills: ["Three.js", "OpenCV", "Next.js", "python", "Typescript"],
+        skills: ["Three.js", "OpenCV", "Next.js", "python", "Typescript", "HTML", "CSS"],
         time: "2025-01-20", // ISO date format
         amount: 2100,       // Example: lines of code
         softness: 8.5,        // Higher value = more software-centric

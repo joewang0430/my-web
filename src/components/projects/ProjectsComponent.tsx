@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect } from "react";
+import Image from "next/image";
 import ProjectGitHub from "./ui/ProjectGitHub";
 
 interface ProjectsComponentProps {
@@ -24,7 +28,11 @@ const ProjectsComponent = ({
   amount,
   softness,
  }: ProjectsComponentProps) => {
-  // const skillss: string[] = ["React", "Next.js", "TailwindCSS", "TypeScript"];
+
+  useEffect(() => {
+    console.log({ linkPath, time, amount, softness });
+  }, [linkPath, time, amount, softness]);
+  
   return (
     <div 
     className="
@@ -44,11 +52,12 @@ const ProjectsComponent = ({
       ">
       {/* Picture */}
       <div className="relative w-[99%] h-[12rem] mb-4 overflow-hidden mx-auto">
-        <img
-          src={`/projects/${imagePath}`}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
+      <Image
+        src={`/projects/${imagePath}`}
+        alt={title}
+        fill
+        className="object-cover"
+      />
         {gitHub && (
           <div className="absolute top-2 right-2 z-10">
             <ProjectGitHub linkPath={gitHub} />
