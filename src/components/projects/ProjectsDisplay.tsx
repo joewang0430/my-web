@@ -61,7 +61,7 @@ const ProjectsDisplay = () => {
       </div>
 
       {/* Display the sorted projects */}
-      <div className="flex flex-wrap gap-8">
+      <div className="flex flex-row flex-wrap gap-8">
         {sortedProjects.map((project, index) => (
           <ProjectsComponent
             key={index}
