@@ -8,7 +8,7 @@ const About = () => {
     return (
         <section id="about" className="flex flex-col justify-between bg-wz-bg-color lg:h-screen">
             {/* <div className="mt-28 lg:mt-48 container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between max-w-4xl lg:gap-x-8"> */}
-            <div className="flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between max-w-4xl lg:gap-x-8">
+            <div className="flex-1 mt-28 lg:mt-48 container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between max-w-4xl lg:gap-x-8">
                 {/* Left Column: Introductory Text */}
                 <div className="w-full lg:w-2/3 flex flex-col justify-center mb-8 lg:mb-0">
                     <h1 className="text-5xl font-bold text-wz-main-color font-funnel-display">Jue Wang 王珏</h1>
