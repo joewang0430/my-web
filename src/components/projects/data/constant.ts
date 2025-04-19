@@ -8,7 +8,7 @@ export const PROJECTS_LIST = [
         linkPath: "",
         skills: ["C++", "EZGL", "libCurl"],
         time: "2025-04-30", // ISO date format
-        amount: 2050,       // Example: lines of code
+        amount: 7000,       // Example: lines of code
         softness: 6,        // Higher value = more software-centric
     },
     {
@@ -41,7 +41,7 @@ export const PROJECTS_LIST = [
         skills: ["ESP-32", "C", "WebSockets", "Flask", "Python", "TypeScripts", "HTML", "CSS"],
         time: "2025-02-15", // ISO date format
         amount: 2000,       // Example: lines of code
-        softness: 4,        // Higher value = more software-centric
+        softness: 5,        // Higher value = more software-centric
     },
     {
         imagePath: "protracc_co.jpg",
