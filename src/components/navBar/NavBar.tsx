@@ -17,7 +17,7 @@ const NavBar = () => {
             setpageName("profile");
         } else if (pathname === "/gallery") {
             setpageName("gallery");
-        } else if (pathname.startsWith("/gallery/")) {
+        } else if (pathname.startsWith("/gallery/") || pathname.startsWith("/people/")) {
             setpageName("gallerySubpage");
         } else if (pathname.startsWith("/")) {
             setpageName("homeSubpage");

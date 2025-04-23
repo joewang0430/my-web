@@ -27,7 +27,7 @@ const RightNav = ({ page, path }: RightNavProps) => {
         return <RightNavGallery />;
 
     } else if (page === "gallerySubpage") {
-        return <RightNavGallerySubpage />;
+        return <RightNavGallerySubpage path={path} />;
     }
 };
 

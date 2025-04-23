@@ -10,7 +10,6 @@ const NameNav = ({page}: NameNavProps) => {
         return (
             <div className="relative group">
                 <Link href="#homemain" className="py-5 px-3 text-2xl text-wz-classic-blue dark:text-wz-classic-green hover:text-wz-secondary-blue dark:hover:text-wz-secondary-green"> 
-                {/* font-funnel-display */}
                     Jue Wang
                 </Link>
             </div>
@@ -36,13 +35,7 @@ const NameNav = ({page}: NameNavProps) => {
             </div>
         );
 
-    } else if (page === "gallerySubpage") {
-        return (
-            <div className="py-5 px-3 relative group">
-                <Link href="/gallery" className="">Joe&apos;s Gallery</Link>
-            </div>
-        );
-    }
+    } 
 };
 
-export default NameNav; 
+export default NameNav;

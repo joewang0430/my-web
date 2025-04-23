@@ -4,10 +4,12 @@ import { useState } from "react";
 import ProfileNav from "../ui/ProfileNav";
 import HomeNav from "../ui/HomeNav";
 import RightMenuList from "./rightMenu/RightMenuList";
-import { NAV_LINKS_GALLERY, NAV_LINKS_GALLERY_SUBPAGE, NAV_LINKS_HOME, NAV_LINKS_HOME_SUBPAGE, NAV_LINKS_PROFILE } from "../data/constants";
 import MenuTag from "../ui/MenuTag";
+import ThemeSwitch from "../ui/ThemeSwitch";
+import { NAV_LINKS_GALLERY, NAV_LINKS_GALLERY_SUBPAGE, NAV_LINKS_HOME, NAV_LINKS_HOME_SUBPAGE, NAV_LINKS_PROFILE} from "../data/constants";
 
-// "home" | "profile" | "gallery" | "gallerySubpage" | "homeSubpage"
+
+// <"home" | "profile" | "gallery" | "gallerySubpage" | "homeSubpage">
 
 interface RightMenuProps {
     page: string;
@@ -64,6 +66,8 @@ const RightMenu = ({page}: RightMenuProps) => {
     } else if (page === "gallerySubpage") {
         return (
             <div className="flex items-center">
+                <ThemeSwitch />
+                <div className="ml-2"></div>
                 <HomeNav small={true}/>
                 <MenuTag onClick={toggleMenu} />
 
