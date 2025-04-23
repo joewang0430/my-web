@@ -12,7 +12,7 @@ const PeopleSection = ({ urlPartial }: PeopleSectionProps) => {
       { person && (
         <figure className="flex flex-col items-center">
           <img src={person.imagePath} alt={person.name} className="object-contain w-96" />
-          <figcaption className="mt-4 text-lg text-wz-text-color font-wf-theme">
+          <figcaption className="mt-4 text-xl text-wz-main-color font-wf-title">
             {person.description}
           </figcaption>
         </figure>

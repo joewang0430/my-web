@@ -98,8 +98,8 @@ export const NAV_LINKS_GALLERY = [
         id: "blogs",
     },
     {
-        name: "Friends",
-        href: "/gallery#friends",
+        name: "People",
+        href: "/gallery#people",
         id: "friends",
     },
     {
