@@ -1,19 +1,23 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function PulseTrackPage() {
     return (
-        <div className="flex flex-col w-full mx-auto">
-            <h1 className="text-2xl font-bold">Pulse Track</h1>
-            <p className="mt-4">
-                Pulse Track is a web application that allows users to track their heart rate and other vital signs over time. It provides a user-friendly interface for logging and visualizing health data, helping users monitor their fitness and well-being.
-            </p>
-            <p className="mt-4">
-                The application includes features such as:
-            </p>
-            <ul className="list-disc list-inside mt-2">
-                <li>Real-time heart rate monitoring</li>
-                <li>Data visualization through charts and graphs</li>
-                <li>Customizable reminders for tracking vital signs</li>
-                <li>Exporting data for further analysis</li>
-            </ul>
-        </div>
+        <section id="projects" className="flex items-center justify-center bg-wz-bg-color">
+            <div className="container mx-auto px-4 flex flex-col items-start justify-between max-w-5xl lg:gap-x-8 mt-24 mb-12">
+                <h1 className="text-7xl font-bold text-wz-main-color font-funnel-display mb-8 self-start">Pulse Track</h1>
+                <p className="text-wz-text-color mb-4 font-wf-theme text-xl">
+                    A wearable device monitoring biometric indicators, including body temperature, heart rate, step counts, and blood oxygen.
+                </p>
+                <Link className="text-wz-main-color mb-4 font-wf-theme text-xl font-bold hover:underline hover:text-wz-secondary-color" href="https://github.com/joewang0430/health-monitor">
+                    GitHub Repository&nbsp;&rarr;
+                </Link>
+                <p className="mb-4 font-wf-theme text-xl">
+                    <span className="text-wz-main-color font-bold">Implemented with: </span>
+                    <span className="text-wz-text-color">Brain Liu, Suzen Bao, Alex Hu.</span>
+                </p>
+                
+            </div>
+        </section>
     );
 }
