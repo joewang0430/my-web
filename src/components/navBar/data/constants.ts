@@ -116,3 +116,12 @@ export const NAV_LINKS_GALLERY_SUBPAGE = [
     },
 
 ];
+
+
+export const NAV_LINKS_PROJECTS_SUBPAGE = [
+    {
+        name: "<< Profile",
+        href: "/profile#projects",
+    },
+
+];

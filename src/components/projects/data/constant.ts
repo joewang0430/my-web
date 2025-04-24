@@ -37,7 +37,7 @@ export const PROJECTS_LIST = [
         title: "Pulse Track",
         description: "A wearable health monitor controlled by ESP-32. It sends realtime haelth data to a server and displays the data on a webpage.",
         gitHub: "https://github.com/joewang0430/health-monitor",
-        linkPath: "",
+        linkPath: "/projects/pulse_track",
         skills: ["ESP-32", "C", "WebSockets", "Flask", "Python", "TypeScripts", "HTML", "CSS"],
         time: "2025-02-15", // ISO date format
         amount: 2000,       // Example: lines of code

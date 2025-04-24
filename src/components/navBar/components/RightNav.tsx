@@ -3,6 +3,7 @@ import RightNavHomeSubpage from './rightNav/RightNavHomeSubpage';
 import RightNavProfile from './rightNav/RightNavProfile';
 import RightNavGallery from './rightNav/RightNavGallery';
 import RightNavGallerySubpage from './rightNav/RightNavGallerySubpage';
+import RightNavProjectsSubpage from './rightNav/RightNavProjectsSubpage';   
 
 
 // "home" | "profile" | "gallery" | "gallerySubpage" | "homeSubpage"
@@ -23,6 +24,9 @@ const RightNav = ({ page, path }: RightNavProps) => {
     } else if (page === "profile") {
         return <RightNavProfile />;
 
+    } else if (page === "projectsSubpage") {
+        return <RightNavProjectsSubpage path={path} />;
+        
     } else if (page === "gallery") {
         return <RightNavGallery />;
 

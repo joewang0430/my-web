@@ -1,9 +1,5 @@
+import { redirect } from 'next/navigation';
 
-
-export default function ProjectsPage() {
-    return (
-        <div>
-            <h1>Projects Page</h1>
-        </div>
-    );
+export default function ProjectPage() {
+  redirect('/profile#projects');
 }

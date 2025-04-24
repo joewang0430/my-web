@@ -8,7 +8,7 @@ import LeftNav from "./components/LeftNav";
 
 const NavBar = () => {
     const pathname = usePathname();
-    const [pageName, setpageName] = useState<"home" | "profile" | "gallery" | "gallerySubpage" | "homeSubpage">("home");
+    const [pageName, setpageName] = useState<"home" | "profile" | "projectsSubpage" | "gallery" | "gallerySubpage" | "homeSubpage">("home");
 
     useEffect(() => {
         if (pathname === "/") {
@@ -17,6 +17,8 @@ const NavBar = () => {
             setpageName("profile");
         } else if (pathname === "/gallery") {
             setpageName("gallery");
+        } else if (pathname.startsWith("/projects/")) {
+            setpageName("projectsSubpage");
         } else if (pathname.startsWith("/gallery/") || pathname.startsWith("/people/")) {
             setpageName("gallerySubpage");
         } else if (pathname.startsWith("/")) {

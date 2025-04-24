@@ -6,10 +6,10 @@ import HomeNav from "../ui/HomeNav";
 import RightMenuList from "./rightMenu/RightMenuList";
 import MenuTag from "../ui/MenuTag";
 import ThemeSwitch from "../ui/ThemeSwitch";
-import { NAV_LINKS_GALLERY, NAV_LINKS_GALLERY_SUBPAGE, NAV_LINKS_HOME, NAV_LINKS_HOME_SUBPAGE, NAV_LINKS_PROFILE} from "../data/constants";
+import { NAV_LINKS_GALLERY, NAV_LINKS_GALLERY_SUBPAGE, NAV_LINKS_HOME, NAV_LINKS_HOME_SUBPAGE, NAV_LINKS_PROFILE, NAV_LINKS_PROJECTS_SUBPAGE} from "../data/constants";
 
 
-// <"home" | "profile" | "gallery" | "gallerySubpage" | "homeSubpage">
+// <"home" | "profile" | "projectsSubpage" | "gallery" | "gallerySubpage" | "homeSubpage">
 
 interface RightMenuProps {
     page: string;
@@ -60,6 +60,18 @@ const RightMenu = ({page}: RightMenuProps) => {
                 <MenuTag onClick={toggleMenu} />
 
                 {isOpen && (<RightMenuList list={NAV_LINKS_GALLERY} />)}
+            </div>
+        );
+
+    } else if (page === "projectsSubpage") {
+        return (
+            <div className="flex items-center">
+                <ThemeSwitch />
+                <div className="ml-2"></div>
+                <HomeNav small={true}/>
+                <MenuTag onClick={toggleMenu} />
+
+                {isOpen && (<RightMenuList list={NAV_LINKS_PROJECTS_SUBPAGE} />)}
             </div>
         );
 
