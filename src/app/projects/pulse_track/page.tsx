@@ -30,7 +30,7 @@ export default function PulseTrackPage() {
                         <li><span className="font-bold">3.7V Li-ion Battery (800mAh)</span> - Power source for the ESP32.</li>
                         <li><span className="font-bold">AMS1117-3.3V</span> - Voltage regulator to step down from 3.7V to 3.3V.</li>
                         <li><span className="font-bold">Adjustable Velcro Strap</span> - To secure the wearable system on the wrist.</li>
-                        <li><span className="font-bold">OLED Display (SSD1306, 0.96")</span> - Optional local data visualization.</li>
+                        <li><span className="font-bold">OLED Display (SSD1306, 0.96&quot;)</span> - Optional local data visualization.</li>
                     </ul>
                 </div>
                 {/* assembling */}
@@ -53,7 +53,7 @@ export default function PulseTrackPage() {
                     </p>
                 </div>
                 {/* software part */}
-                
+
             </div>
         </section>
     );
