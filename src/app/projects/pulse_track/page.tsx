@@ -129,7 +129,7 @@ export default function PulseTrackPage() {
                     </p>
                 </div>
                 {/* future */}
-                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">What's Next</h2>
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">What&apos;s Next</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
                     We plan to enhance PulseTrack with:
                 </p>
