@@ -9,7 +9,10 @@ export default function PulseTrackPage() {
                 <p className="text-wz-text-color mt-8 font-wf-theme text-lg">
                     A wearable device monitoring biometric indicators, including body temperature, heart rate, step counts, and blood oxygen in real-time.
                 </p>
-                <Link className="text-wz-main-color mt-4 font-wf-theme text-lg font-bold hover:underline hover:text-wz-secondary-color" href="https://github.com/joewang0430/health-monitor">
+                <Link className="text-wz-main-color mt-4 font-wf-theme text-lg font-bold hover:underline hover:text-wz-secondary-color" 
+                    href="https://github.com/joewang0430/health-monitor"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     GitHub Repository&nbsp;&rarr;
                 </Link>
                 <p className="mt-4 font-wf-theme text-lg">
@@ -18,9 +21,9 @@ export default function PulseTrackPage() {
                 </p>
                 <p className="mt-4 font-wf-theme text-lg">
                     <span className="text-wz-main-color font-bold">Implemented with: </span>
-                    <span className="text-wz-text-color">Brain Liu, Suzen Bao, Alex Hu.</span>
+                    <span className="text-wz-text-color">Kaiqi Hu, Suzen Bao, Brain Liu.</span>
                 </p>
-                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Overall pipline</h2>
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Overall pipeline</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
                     The system consists of an ESP32-based microcontroller that collects data from multiple sensors and transmits it to a web application for visualization. 
                     The data is stored in an SQLite database via a Flask server with WebSocket support, allowing real-time updates to the front-end.
@@ -41,7 +44,7 @@ export default function PulseTrackPage() {
                 <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Assembling</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
                     The system is assembled to the human body using cinch cable ties. The central ESP32 and battery are soldered onto a PCB board and connected with other sensors using jump wires, 
-                    as each hardware was required to be at its best monitoring part. 
+                    ensuring each component is optimally positioned for monitoring.
                 </p>
                 {/* picture */}
                 <div className="mt-8 flex flex-col items-center self-center">
@@ -64,8 +67,8 @@ export default function PulseTrackPage() {
                 </p>
                 <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Frontend: Monitor Page</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    The front-end page is built using React and Next.js. Since the back end is sending data throught WebSockets, it can directly get the real-time data. 
-                    Finally, the data monitor page displays all these data. The page is designed to be responsive and can be accessed from any device with a web browser.
+                    The front-end page is built using React and Next.js. Since the back end is sending data through WebSockets, it can directly retrieve real-time data. 
+                    Finally, the monitor page displays all of the data. The page is designed to be responsive and can be accessed from any device with a web browser.
                 </p>
                 {/* picture 2 */}
                 <div className="mt-8 flex flex-col items-center self-center">
@@ -90,10 +93,8 @@ export default function PulseTrackPage() {
                 {/* software part continue */}
                 <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Frontend: Exercise Mode</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    The webpage also provides an exercise mode. 
-                    User can enter the exercise mode by clicking the button on the monitor page. After that, the webpage will individually monitor the data, 
-                    only within the period that the monitor mode is on. User will decide the start and end time of the exercise mode.
-                    The webpage will also provide a AI report after the exercise mode is off.
+                    The webpage also provides an exercise mode. Users can enter exercise mode by clicking the button on the monitor page. Once activated, the webpage will individually monitor the data during that period. 
+                    Users will decide the start and end times of the exercise mode, and the webpage will also provide an AI report after the exercise mode is deactivated.
                 </p>
                 {/* picture 4 */}
                 <div className="mt-8 flex flex-col items-center self-center">
@@ -111,9 +112,7 @@ export default function PulseTrackPage() {
                 {/* software part continue */}
                 <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Frontend: AI Page</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    Finally, the webpage will provides a AI page. 
-                    It uses the data collected from the wearable device in the exercise mode to prompt a Gemini AI model to generate a personalized health report,
-                    and provide some advice for exercise.
+                    Finally, the webpage will provide an AI page. It uses the data collected from the wearable device during exercise mode to prompt a Gemini AI model to generate a personalized health report and offer exercise advice.
                 </p>
                 {/* picture 3 */}
                 <div className="mt-8 flex flex-col items-center self-center">
@@ -131,16 +130,16 @@ export default function PulseTrackPage() {
                 {/* future */}
                 <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">What&apos;s Next</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    We plan to enhance PulseTrack with:
+                    We plan to enhance Pulse Track with:
                 </p>
                 <ul className="list-disc pl-5 mt-4 text-wz-text-color font-wf-theme text-lg">
-                    <li>Bluetooth support for mobile connectivity.</li>
-                    <li>Cloud storage for long-term health data tracking.</li>
-                    <li>More sensors for additional health metrics.</li>
-                    <li>Expanded AI capabilities for deeper predictive insights.</li>
+                    <li>Add AI suggestions based on the navigation path and real-time information (e.g., weather conditions).</li>
+                    <li>Fetch real-time traffic data for each city and display it within the graphics.</li>
+                    <li>Add a voice broadcast function.</li>
+                    <li>Rebuild the system using JavaScript and deploy it!</li>
                 </ul>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                This hackathon has been an incredible journey, and we&apos;re excited to keep pushing the boundaries of health tech!
+                This hackathon has been an incredible journey, and we’re excited to continue pushing the boundaries of health tech!
                 </p>
             </div>
         </section>

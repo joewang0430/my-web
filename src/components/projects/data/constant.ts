@@ -3,9 +3,9 @@
 export const PROJECTS_LIST = [
     {
         imagePath: "gis_mapping.jpg",
-        title: "GIS Mapping",
+        title: "GIS Mapper",
         description: "A map software developed by C++ and EZGL UI. It loads and displays map data from OpenStreetMap.",
-        linkPath: "",
+        linkPath: "/projects/gis_mapper",
         skills: ["C++", "EZGL", "libCurl"],
         time: "2025-04-30", // ISO date format
         amount: 7000,       // Example: lines of code
