@@ -13,6 +13,10 @@ export default function PulseTrackPage() {
                     GitHub Repository&nbsp;&rarr;
                 </Link>
                 <p className="mt-4 font-wf-theme text-lg">
+                    <span className="text-wz-main-color font-bold">Tech Stack: </span>
+                    <span className="text-wz-text-color">C++, ESP32, Flask, Gevent, Next.js, Python, React, TypeScript, WebSocket.</span>
+                </p>
+                <p className="mt-4 font-wf-theme text-lg">
                     <span className="text-wz-main-color font-bold">Implemented with: </span>
                     <span className="text-wz-text-color">Brain Liu, Suzen Bao, Alex Hu.</span>
                 </p>
@@ -40,11 +44,11 @@ export default function PulseTrackPage() {
                     as each hardware was required to be at its best monitoring part. 
                 </p>
                 {/* picture */}
-                <div className="mt-8 flex flex-col items-center">
+                <div className="mt-8 flex flex-col items-center self-center">
                     <Image 
                         src="/projects/pulse_track/pulse_track_1.jpg" 
                         alt="Pulse Track experimental setup" 
-                        width={800} 
+                        width={450} 
                         height={450} 
                         className="rounded-lg"
                     />
@@ -53,7 +57,91 @@ export default function PulseTrackPage() {
                     </p>
                 </div>
                 {/* software part */}
-
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Backend</h2>
+                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    After the ESP32 collects data from the sensors, it transmits the data to a Flask server by sending the 
+                    http post requests. After receiving the data, the server traverses the clients and sends this data in real-time to the front-end page.
+                </p>
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Frontend: Monitor Page</h2>
+                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    The front-end page is built using React and Next.js. Since the back end is sending data throught WebSockets, it can directly get the real-time data. 
+                    Finally, the data monitor page displays all these data. The page is designed to be responsive and can be accessed from any device with a web browser.
+                </p>
+                {/* picture 2 */}
+                <div className="mt-8 flex flex-col items-center self-center">
+                    <Image 
+                        src="/projects/pulse_track/pulse_track_5.jpg" 
+                        alt="Pulse Track experimental setup" 
+                        width={650} 
+                        height={650} 
+                        className="rounded-lg"
+                    />
+                    <Image 
+                        src="/projects/pulse_track/pulse_track_2.jpg" 
+                        alt="Pulse Track experimental setup" 
+                        width={450} 
+                        height={450} 
+                        className="rounded-lg"
+                    />
+                    <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
+                        The webpage displays real-time data from the wearable device.
+                    </p>
+                </div>
+                {/* software part continue */}
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Frontend: Exercise Mode</h2>
+                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    The webpage also provides an exercise mode. 
+                    User can enter the exercise mode by clicking the button on the monitor page. After that, the webpage will individually monitor the data, 
+                    only within the period that the monitor mode is on. User will decide the start and end time of the exercise mode.
+                    The webpage will also provide a AI report after the exercise mode is off.
+                </p>
+                {/* picture 4 */}
+                <div className="mt-8 flex flex-col items-center self-center">
+                    <Image 
+                        src="/projects/pulse_track/pulse_track_4.jpg" 
+                        alt="Pulse Track experimental setup" 
+                        width={450} 
+                        height={450} 
+                        className="rounded-lg"
+                    />
+                    <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
+                        Exercise Mode
+                    </p>
+                </div>
+                {/* software part continue */}
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Frontend: AI Page</h2>
+                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    Finally, the webpage will provides a AI page. 
+                    It uses the data collected from the wearable device in the exercise mode to prompt a Gemini AI model to generate a personalized health report,
+                    and provide some advice for exercise.
+                </p>
+                {/* picture 3 */}
+                <div className="mt-8 flex flex-col items-center self-center">
+                    <Image 
+                        src="/projects/pulse_track/pulse_track_3.jpg" 
+                        alt="Pulse Track experimental setup" 
+                        width={450} 
+                        height={450} 
+                        className="rounded-lg"
+                    />
+                    <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
+                        The AI page generates a personalized health report based on the data collected. Tricky zero here!
+                    </p>
+                </div>
+                {/* future */}
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">What's Next</h2>
+                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    We plan to enhance PulseTrack with:
+                </p>
+                <ul className="list-disc pl-5 mt-4 text-wz-text-color font-wf-theme text-lg">
+                    <li>Bluetooth support for mobile connectivity.</li>
+                    <li>Cloud storage for long-term health data tracking.</li>
+                    <li>More sensors for additional health metrics.</li>
+                    <li>Expanded AI capabilities for deeper predictive insights.</li>
+                </ul>
+                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                This hackathon has been an incredible journey, and we&apos;re excited to keep pushing the boundaries of health tech!
+                </p>
             </div>
         </section>
     );
