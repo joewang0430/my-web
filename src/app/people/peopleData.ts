@@ -16,6 +16,16 @@ export const PEOPLE_DICT: Record<string, PeopleData> = {
         name: "My Dear Dad :)",
         description: "",
     },
+    "lee_kaeul": {
+        imagePath: "/people/lee_kaeul.jpg",
+        name: "Kaeul Lee 이가을",
+        description: "",
+    },
+    "hu_kaiqi": {
+        imagePath: "/people/hu_kaiqi.jpg",
+        name: "Kaiqi Hu 胡铠麒",
+        description: "",
+    },
     "chen_qirui": {
         imagePath: "/people/chen_qirui.png",
         name: "Qirui Chen 陈祈睿",
