@@ -1,6 +1,6 @@
-import { PEOPLE_DICT } from "@/app/people/peopleData";
+import { PEOPLE_DICT, PEOPLE_ALT, getPeopleData, getMainKey } from "@/app/people/peopleData";
 import PeopleSection from "@/sections/people/PeopleSection";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 interface PersonPageProps {
     params: Promise<{
@@ -11,9 +11,16 @@ interface PersonPageProps {
 export default async function PersonPage({ params }: PersonPageProps) {
     const { person } = await params;
     
-    // check if this person is in data
-    if (!PEOPLE_DICT[person]) {
-        notFound(); // if not return 404 page
+    // check if people exists (including alt names)
+    const personData = getPeopleData(person);
+    if (!personData) {
+        notFound();
+    }
+    
+    // if is alt name，redirect to key URL
+    const mainKey = getMainKey(person);
+    if (mainKey && mainKey !== person) {
+        redirect(`/people/${mainKey}`);
     }
 
     return (
@@ -23,7 +30,10 @@ export default async function PersonPage({ params }: PersonPageProps) {
 
 // Generate static paths (for performance optimization)
 export async function generateStaticParams() {
-    return Object.keys(PEOPLE_DICT).map((person) => ({
+    const mainKeys = Object.keys(PEOPLE_DICT);
+    const altKeys = Object.keys(PEOPLE_ALT);
+    
+    return [...mainKeys, ...altKeys].map((person) => ({
         person: person,
     }));
 }
@@ -31,7 +41,7 @@ export async function generateStaticParams() {
 // Generate page metadata
 export async function generateMetadata({ params }: PersonPageProps) {
     const { person } = await params;
-    const personData = PEOPLE_DICT[person];
+    const personData = getPeopleData(person);
     
     if (!personData) {
         return {
