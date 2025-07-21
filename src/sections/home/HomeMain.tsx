@@ -32,7 +32,11 @@ const TypingEffect = ({ text, speed = 50, startDelay = 0 }: { text: string; spee
     return <>{displayedText}</>;
 };
 
+// Main component for the home section
+
 const HomeMain = () => {
+
+ 
     return (
         <section id="homemain" className="flex items-center justify-center bg-wz-bg-color h-screen">
             <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between max-w-5xl mt-12">
