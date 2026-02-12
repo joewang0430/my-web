@@ -107,6 +107,16 @@ export const PROJECTS_LIST = [
         softness: 9,        // Higher value = more software-centric
     },
     {
+        imagePath: "planning_agent.jpg",
+        title: "Government Planning Agent",
+        description: "An AI agent app based on an external knowledge base that supports generating government planning articles (in Chinese) and revise.",
+        linkPath: "/projects/planning_agent",
+        skills: ["RAG", "embedding AI", "LLM", "LangChain"],
+        time: "2025-7-16", // ISO date format
+        amount: 4000,       // Example: lines of code
+        softness: 9,        // Higher value = more software-centric
+    },
+    {
         imagePath: "no_pic_yet.jpg",
         title: "(Under dev) Heap Hopper",
         description: "Console Game that player control a rolling ball to avoid falling tiles and meanwhile eat coins as much as possible.",

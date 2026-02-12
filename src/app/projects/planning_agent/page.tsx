@@ -1,20 +1,20 @@
 import Image from 'next/image';
 
-export default function GISMapperPage() {
+export default function PlanningAgentPage() {
     return (
         <section id="projects" className="flex items-center justify-center bg-wz-bg-color">
             <div className="container mx-auto px-4 flex flex-col items-start justify-between max-w-5xl lg:gap-x-8 mt-24 mb-12">
-                <h1 className="text-7xl font-bold text-wz-main-color font-funnel-display self-start">GIS Mapper</h1>
+                <h1 className="text-7xl font-bold text-wz-main-color font-funnel-display self-start">AI Government Planning Writing Agent</h1>
                 <p className="text-wz-text-color mt-8 font-wf-theme text-lg">
-                    A semester-long project focused on building mapping software for place searching and navigation using C++. It combines geographic data visualization, pathfinding algorithms, and delivery constraints to simulate real-world logistics optimization.
+                    This is an outsourcing project I did for a company in China in two month. 
                 </p>
                 <p className="mt-4 font-wf-theme text-lg">
                     <span className="text-wz-main-color font-bold">Tech Stack: </span>
-                    <span className="text-wz-text-color">C++, EZGL, libCurl, STL library.</span>
+                    <span className="text-wz-text-color">LangChain (LangGraph), Embeding AI, Vector Database</span>
                 </p>
                 <p className="mt-4 font-wf-theme text-lg">
                     <span className="text-wz-main-color font-bold">Implemented by: </span>
-                    <span className="text-wz-text-color">Kaeul Lee, Alex Hu.</span>
+                    <span className="text-wz-text-color">Myself</span>
                 </p>
                 <div className="mt-8">
                     <h2 className="text-2xl font-bold text-wz-main-color font-wf-title">Overall Functions</h2>
