@@ -6,7 +6,7 @@ const Experience = () => {
                 Education Experience
                 </h1>
                 <h2 className="font-wf-title text-wz-main-color font-bold text-xl">
-                2023-2028&nbsp;
+                2023-2027&nbsp;
                 </h2>
                 <p className="text-wz-text-color font-wf-theme text-xl">
                 BASe in Computer Engineering, University of Toronto

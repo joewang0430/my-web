@@ -14,10 +14,10 @@ const About = () => {
                     <h1 className="text-5xl font-bold text-wz-main-color font-funnel-display">Jue Wang 王珏</h1>
                     
                     <p className="text-wz-text-color mt-8 font-wf-theme text-lg">
-                        I&apos;m a computer engineering undergraduate (2nd year ECE) at University of Toronto. My work focuses on full-stack development, algorithm design, and machine learning. 
+                        I&apos;m a computer engineering undergraduate (3rd year ECE) at University of Toronto. My work focuses on software architecture, algorithm design, and machine learning. 
                     </p>
 
-                    <p className="text-lg mt-4">
+                    {/* <p className="text-lg mt-4">
                         <span className="font-wf-theme text-wz-text-color">
                             I can write .py .cpp .js .a .tsx ... files, along with some frameworks. Maybe you&apos;ve grown tired of hearing these buzzwords in other resumes. If so, check my&nbsp;
                         </span>
@@ -29,6 +29,12 @@ const About = () => {
                         </Link>
                         <span className="font-wf-theme text-wz-text-color">
                             &nbsp;to see if there&apos;s something new.
+                        </span>
+                    </p> */}
+
+                    <p className="text-lg mt-4">
+                        <span className="font-wf-theme text-wz-text-color">
+                            I can write .py .cpp .js .a .tsx ... files, along with some frameworks. Maybe you&apos;ve grown tired of hearing these buzzwords in other resumes so I won't say anything more than that.
                         </span>
                     </p>
 
@@ -54,15 +60,12 @@ const About = () => {
                         </span>
                     </p>
 
-                    <p className="text-lg mt-4">
-                        {/* <span className="font-wf-theme text-wz-main-color font-bold">
-                           *&nbsp;
-                        </span> */}
+                    {/* <p className="text-lg mt-4">
                         <span className="font-wf-theme text-wz-text-color">
                             Currently, I&apos;m looking for a 
                         </span>
                         <span className="font-wf-theme text-wz-main-color font-bold">
-                            &nbsp;2025 summer internship
+                            &nbsp;2026 summer internship
                         </span>
                         <span className="font-wf-theme text-wz-text-color">
                             &nbsp;in my hometown, 
@@ -72,6 +75,12 @@ const About = () => {
                         </span>
                         <span className="font-wf-theme text-wz-text-color">
                             &nbsp;I&apos;ll be back there at the end of April, and work for four months.
+                        </span>
+                    </p> */}
+
+                     <p className="text-lg mt-4">
+                        <span className="font-wf-theme text-wz-text-color">
+                            Currently, I&apos;m struggling with my third year courses as I just messed up with my first CSC343 midterm.
                         </span>
                     </p>
 

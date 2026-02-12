@@ -27,7 +27,7 @@ export const PROJECTS_LIST = [
         description: "The website you are currently viewing.",
         gitHub: "https://github.com/joewang0430/my-web",
         linkPath: "",
-        skills: ["Typescript", "React", "Next.js", "HTML", "CSS"],
+        skills: ["Typescript", "React", "Next.js"],
         time: "2025-03-01", // ISO date format
         amount: 1700,       // Example: lines of code
         softness: 9,        // Higher value = more software-centric
@@ -38,7 +38,7 @@ export const PROJECTS_LIST = [
         description: "A wearable health monitor controlled by ESP-32. It sends realtime haelth data to a server and displays the data on a webpage.",
         gitHub: "https://github.com/joewang0430/health-monitor",
         linkPath: "/projects/pulse_track",
-        skills: ["ESP-32", "C", "WebSockets", "Flask", "Python", "TypeScripts", "HTML", "CSS"],
+        skills: ["ESP-32", "C", "WebSockets", "Flask", "Python", "TypeScripts"],
         time: "2025-02-15", // ISO date format
         amount: 2000,       // Example: lines of code
         softness: 5,        // Higher value = more software-centric
@@ -49,7 +49,7 @@ export const PROJECTS_LIST = [
         description: "A visualizaiton system using OpenCV to capture human postures and display them in 3D on a webpage.",
         gitHub: "https://github.com/joewang0430/protracc-co",
         linkPath: "",
-        skills: ["Three.js", "OpenCV", "Next.js", "python", "Typescript", "HTML", "CSS"],
+        skills: ["Three.js", "OpenCV", "Next.js", "python", "Typescript"],
         time: "2025-01-20", // ISO date format
         amount: 2100,       // Example: lines of code
         softness: 8.5,        // Higher value = more software-centric
@@ -84,6 +84,57 @@ export const PROJECTS_LIST = [
         time: "2022-09-06", // ISO date format
         amount: 400,       // Example: lines of code
         softness: 4.5,        // Higher value = more software-centric
+    },
+    {
+        imagePath: "speakeasy.jpg",
+        title: "SpeakEasy",
+        description: "An AI-powered interview practice tool that helps job seekers master behavioral questions through video-based practice.",
+        gitHub: "https://github.com/Dante-Capobianco/speakeasy-HTN-25",
+        linkPath: "",
+        skills: ["Computer Vision", "LLM", "Web"],
+        time: "2025-09-12", // ISO date format
+        amount: 3000,       // Example: lines of code
+        softness: 9,        // Higher value = more software-centric
+    },
+    {
+        imagePath: "no_pic_yet.jpg",
+        title: "(Under dev) ReverC",
+        description: "Othello (Reversi) platform: allowing any combination of AI (LLM) / custom C code / human players. Supports users to upload and play with their own algorithms.",
+        linkPath: "",
+        skills: ["AI", "C", "Full-Stack", "DevOp", "python", "web"],
+        time: "2025-06-06", // ISO date format
+        amount: 20000,       // Example: lines of code
+        softness: 9,        // Higher value = more software-centric
+    },
+    {
+        imagePath: "no_pic_yet.jpg",
+        title: "(Under dev) Heap Hopper",
+        description: "Console Game that player control a rolling ball to avoid falling tiles and meanwhile eat coins as much as possible.",
+        linkPath: "",
+        skills: ["C#", "Unity", "Game Design"],
+        time: "2025-12-24", // ISO date format
+        amount: 2500,       // Example: lines of code
+        softness: 9,        // Higher value = more software-centric
+    },
+    {
+        imagePath: "no_pic_yet.jpg",
+        title: "(Under dev) Chase",
+        description: "AlphaZero-like AI but playing Othello, based on CNN & MCTS-Monte Carlo Tree Search",
+        linkPath: "",
+        skills: ["Pytorch", "Python", "Reinforcement Learning", "Algorithm Eng"],
+        time: "2025-8-13", // ISO date format
+        amount: 15000,       // Example: lines of code
+        softness: 9,        // Higher value = more software-centric
+    },
+    {
+        imagePath: "no_pic_yet.jpg",
+        title: "(Under dev) WhoistheSpy AI version",
+        description: "Player play the traditional game 'Who is the Spy' with several AI agents.",
+        linkPath: "",
+        skills: ["LLM", "Native AI","C#", "Unity", "Game Design"],
+        time: "2026-2-10", // ISO date format
+        amount: 25000,       // Example: lines of code
+        softness: 9,        // Higher value = more software-centric
     },
 ];
 

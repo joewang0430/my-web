@@ -12,14 +12,14 @@ export const NAV_LINKS_HOME = [
     //     href: "#contact",
     //     id: "contact",
     // },
-    {
-        name: "Resume",
-        href: "/resume.pdf",
-    },
-    {
-        name: "WZ Gallery",
-        href: "/gallery",
-    },
+    // {
+    //     name: "Resume",
+    //     href: "/resume.pdf",
+    // },
+    // {
+    //     name: "WZ Gallery",
+    //     href: "/gallery",
+    // },
 ];
 
 // main: Projects | Resume | Contact | Gallery
@@ -41,14 +41,14 @@ export const NAV_LINKS_HOME_SUBPAGE = [
         name: "Contact",
         href: "/contact",
     },
-    {
-        name: "Resume",
-        href: "/resume.pdf",
-    },
-    {
-        name: "WZ Gallery",
-        href: "/gallery",
-    },
+    // {
+    //     name: "Resume",
+    //     href: "/resume.pdf",
+    // },
+    // {
+    //     name: "WZ Gallery",
+    //     href: "/gallery",
+    // },
 ];
 
 export const NAV_LINKS_PROFILE = [
@@ -76,10 +76,10 @@ export const NAV_LINKS_PROFILE = [
         href: "#projects",
         id: "projects",
     },
-    {
-        name: "Resume",
-        href: "/resume.pdf",
-    },
+    // {
+    //     name: "Resume",
+    //     href: "/resume.pdf",
+    // },
 ];
 
 export const NAV_LINKS_GALLERY = [

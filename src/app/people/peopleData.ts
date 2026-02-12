@@ -39,12 +39,8 @@ export const PEOPLE_DICT: Record<string, PeopleData> = {
 
 export const PEOPLE_ALT: Record<string, string> = {
     "mama": "mom",
-    "mother": "mom",
-    "妈妈": "mom",
     
     "papa": "dad",
-    "father": "dad",
-    "爸爸": "dad",
     
     // Kaeul Lee
     "lee_kaeul": "lee-kaeul", 
