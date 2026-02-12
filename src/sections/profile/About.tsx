@@ -34,7 +34,7 @@ const About = () => {
 
                     <p className="text-lg mt-4">
                         <span className="font-wf-theme text-wz-text-color">
-                            I can write .py .cpp .js .a .tsx ... files, along with some frameworks. Maybe you&apos;ve grown tired of hearing these buzzwords in other resumes so I won't say anything more than that.
+                            I can write .py .cpp .js .a .tsx ... files, along with some frameworks. Maybe you&apos;ve grown tired of hearing these buzzwords in other resumes so I won&apos;t say anything more than that.
                         </span>
                     </p>
 
