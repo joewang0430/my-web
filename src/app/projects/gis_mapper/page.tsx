@@ -181,7 +181,6 @@ export default function GISMapperPage() {
                     <li>Add AI suggestions based on the navigation path and real-time information (e.g., weather conditions).</li>
                     <li>Fetch real-time traffic data for each city and display it within the graphics.</li>
                     <li>Add a voice broadcast function.</li>
-                    <li>Rebuild the system using JavaScript and deploy it!</li>
                 </ul>
             </div>
         </section>
