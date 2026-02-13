@@ -21,7 +21,7 @@ export default function PulseTrackPage() {
                 </p>
                 <p className="mt-4 font-wf-theme text-lg">
                     <span className="text-wz-main-color font-bold">Implemented with: </span>
-                    <span className="text-wz-text-color">Kaiqi Hu, Suzen Bao, Brain Liu.</span>
+                    <span className="text-wz-text-color">Kaiqi Hu, Suzen Bao, Brian Liu.</span>
                 </p>
                 <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Overall pipeline</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
@@ -138,7 +138,7 @@ export default function PulseTrackPage() {
                     <li>Add a voice broadcast function.</li>
                 </ul>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                This hackathon has been an incredible journey, and we’re excited to continue pushing the boundaries of health tech!
+                    This hackathon has been an incredible journey, and we&apos;re excited to continue pushing the boundaries of health tech!
                 </p>
             </div>
         </section>

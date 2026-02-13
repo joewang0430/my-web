@@ -13,8 +13,8 @@ export default function GISMapperPage() {
                     <span className="text-wz-text-color">C++, EZGL, libCurl, STL library.</span>
                 </p>
                 <p className="mt-4 font-wf-theme text-lg">
-                    <span className="text-wz-main-color font-bold">Implemented by: </span>
-                    <span className="text-wz-text-color">Kaeul Lee, Alex Hu.</span>
+                    <span className="text-wz-main-color font-bold">Implemented with: </span>
+                    <span className="text-wz-text-color">Kaeul Lee, Kaiqi Hu.</span>
                 </p>
                 <div className="mt-8">
                     <h2 className="text-2xl font-bold text-wz-main-color font-wf-title">Overall Functions</h2>

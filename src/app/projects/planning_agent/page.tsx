@@ -6,179 +6,164 @@ export default function PlanningAgentPage() {
             <div className="container mx-auto px-4 flex flex-col items-start justify-between max-w-5xl lg:gap-x-8 mt-24 mb-12">
                 <h1 className="text-7xl font-bold text-wz-main-color font-funnel-display self-start">AI Government Planning Writing Agent</h1>
                 <p className="text-wz-text-color mt-8 font-wf-theme text-lg">
-                    This is an outsourcing project I did for a company in China in two month. 
+                    This is an outsourcing project I completed for a company in China in two months. The project obtained a Computer Software Copyright in China (Registration No. 17741364).
                 </p>
                 <p className="mt-4 font-wf-theme text-lg">
                     <span className="text-wz-main-color font-bold">Tech Stack: </span>
-                    <span className="text-wz-text-color">LangChain (LangGraph), Embeding AI, Vector Database</span>
+                    <span className="text-wz-text-color">LangChain (LangGraph), Embedding AI, Vector Database, ChromaDB</span>
                 </p>
-                <p className="mt-4 font-wf-theme text-lg">
+                {/* <p className="mt-4 font-wf-theme text-lg">
                     <span className="text-wz-main-color font-bold">Implemented by: </span>
                     <span className="text-wz-text-color">Myself</span>
-                </p>
+                </p> */}
                 <div className="mt-8">
                     <h2 className="text-2xl font-bold text-wz-main-color font-wf-title">Overall Functions</h2>
                     <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                        The software is designed to provide a user-friendly interface for searching and navigating maps. It offers the following key functions:
+                        This AI agent is built on external knowledge bases and supports generating government planning reports (in Chinese) and revising them. The document is generated in three steps: selecting relevant knowledge bases by title relevance, generating an outline from the title and selected sources, and producing the full text based on all prior information.
                     </p>
                     <ul className="list-disc pl-5 mt-4 text-lg text-wz-text-color font-wf-theme">
-                        <li><span className="font-bold">Geographical Display:</span>&nbsp;Retrieves data from the libStreetMap API and uses EZGL graphics to render it on a canvas.</li>
-                        <li><span className="font-bold">Point Query:</span>&nbsp;Allows users to click on a point to display its related information, or input information to locate a point.</li>
-                        <li><span className="font-bold">Points of Interest (POI):</span>&nbsp;Enables users to display all POIs in a city using the provided UI buttons—such as restaurants or clinics.</li>
-                        <li><span className="font-bold">Two-Point Navigation:</span>&nbsp;Input two points and the software calculates and displays the optimal path on the map.</li>
-                        <li><span className="font-bold">Navigation Directions:</span>&nbsp;Processes the data from two-point navigation and generates a list of directions for real-world navigation.</li>
-                        <li><span className="font-bold">Solving TSP Problem:</span>&nbsp;Solves a given Traveling Salesman Problem (TSP) using specialized algorithms based on the collected data.</li>
+                        <li><span className="font-bold">Staged Generation:</span>&nbsp;The document is generated as outline first, then content.</li>
+                        <li><span className="font-bold">Knowledge Base Selection:</span>&nbsp;The agent selects which external knowledge bases to reference based on the input title.</li>
+                        <li><span className="font-bold">Customized Knowledge Base:</span>&nbsp;Users can specify which knowledge bases the AI must reference.</li>
+                        <li><span className="font-bold">Text Revision:</span>&nbsp;After the full text is generated, users can select specific paragraphs to rewrite with additional requirements.</li>
+                        <li><span className="font-bold">Sidebar Q&amp;A:</span>&nbsp;A Q&amp;A agent sits beside the main editing area, with access to the current text for answering questions.</li>
                     </ul>
                 </div>
-                {/* Map Graphics */}
-                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Map Graphics</h2>
+                {/* DB selection */}
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Vector Database and RAG</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    The map graphics are created using EZGL, a C++ graphics library that provides functions to draw shapes, text, and images on a canvas. The map data is obtained from the libStreetMap API, and at different zoom levels, the software displays varying levels of detail.
+                    Users begin report generation by entering a title.
                 </p>
+                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    The following example may be unintuitive because it is in Chinese. The user input title <i>&quot;上海市政府关于全市水资源卫生质量监管的专项规划&quot;</i> means <i>&quot;The special plan of the Shanghai Municipal Government on the supervision of water resources hygiene quality throughout the city&quot;.</i>
+                </p>
+                <div>
+                    <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                        The first thing the platform does is find a maximum of five knowledge bases most relevant to the input title. There are around 2,000 knowledge bases, and selection uses vector embeddings to compute similarity between texts.
+                    </p>
+                </div>
+                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                        Three relevant sections most related to &quot;Shanghai water resources sanitation&quot; are found:</p>
+                    <ul className="list-disc pl-5 mt-4 text-lg text-wz-text-color font-wf-theme">
+                        <li><span className="font-semibold">上海市水系统治理“十四五“规划:</span>&nbsp;The 14th Five-Year Plan for Water System Governance in Shanghai.</li>
+                        <li><span className="font-bold">上海市生态空间建设和市容环境优化“十四五“规划:</span>&nbsp;The 14th Five-Year Plan for Ecological Space Construction and Urban Appearance and Environment Optimization in Shanghai.</li>
+                        <li><span className="font-bold">舟山市水生态环境保护“十四五“规划:</span>&nbsp;The 14th Five-Year Plan for Water Ecological Environment Protection in Zhoushan City (a city close to Shanghai).</li>
+                    </ul>
                 {/* picture */}
                 <div className="mt-8 flex flex-col items-center self-center">
                     <Image 
-                        src="/projects/gis_mapper/gis_mapper_1.jpg" 
-                        alt="GIS Mapper picture" 
+                        src="/projects/planning_agent/plagt_outline.jpg" 
+                        alt="Document outline generation picture" 
                         width={950} 
                         height={950} 
                         className="rounded-lg"
                     />
-                    <Image 
-                        src="/projects/gis_mapper/gis_mapper_2.jpg" 
-                        alt="GIS Mapper picture" 
-                        width={950} 
-                        height={950} 
-                        className="rounded-lg mt-8"
-                    />
                     <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
-                        Graphic examples: different zoom levels display varying details.
+                        Graphic examples: knowledge base selection, the agent&apos;s thinking section, and the generated outline.
                     </p>
                 </div>
-                {/* Interactions In Map */}
-                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Interactions on the Map</h2>
-                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    The map is designed to be interactive, allowing users to click on points to retrieve information or navigate the map. The software handles text input through a UI form; users can enter either navigation points or specific intersection names. Additionally, clicking on the map provides details about the selected point.
-                </p>
-                {/* picture 2 */}
                 <div className="mt-8 flex flex-col items-center self-center">
                     <Image 
-                        src="/projects/gis_mapper/gis_mapper_3.jpg" 
-                        alt="GIS Mapper picture" 
+                        src="/projects/planning_agent/plagt_be_details.jpg" 
+                        alt="Document outline generation picture" 
                         width={950} 
                         height={950} 
                         className="rounded-lg"
                     />
                     <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
-                        Example: Given start and end points, the software displays a graphic route with detailed directions.
+                        Behind the scenes, there are steps for embedding similarity checks and required compliance checks.
                     </p>
                 </div>
-                {/* Button Interactions */}
-                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Button Interactions</h2>
+                {/* Outline */}
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Pre-thinking & Outline Stage</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    Buttons on the right allow users to select POIs, toggle light mode, and switch cities.
+                    As shown in the first picture, after inputting the title and selecting external resources, a thinking step extracts key information (similar to the thinking mode in ChatGPT/Gemini). After that, the agent proceeds to write the outline.
+                </p>
+                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    All steps are organized using LangGraph.
+                </p>
+                {/* Text Generation */}
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Content Generation / Outline Revision</h2>
+                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    Users can choose to generate the content for the current outline. In practice, changes are often needed, so the platform allows users to reprompt and rewrite specific outline sections with additional requirements.
                 </p>
                 {/* picture 3 */}
                 <div className="mt-8 flex flex-col items-center self-center">
                     <Image 
-                        src="/projects/gis_mapper/gis_mapper_4.jpg" 
-                        alt="GIS Mapper picture" 
+                        src="/projects/planning_agent/plagt_content.jpg" 
+                        alt="Picture" 
                         width={950} 
                         height={950} 
                         className="rounded-lg"
                     />
                     <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
-                        Features in dark mode.
+                        An example of generated content based on the outline in the previous picture.
                     </p>
                 </div>
-                {/* picture 4 */}
-                <div className="mt-4 flex flex-col items-center self-center">
-                    <Image 
-                        src="/projects/gis_mapper/gis_mapper_5.jpg" 
-                        alt="GIS Mapper picture 5" 
-                        width={950} 
-                        height={950} 
-                        className="rounded-lg"
-                    />
-                    <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
-                        When &quot;Cafes&quot; is selected, all the cafes in the city are displayed on the map.
-                    </p>
-                </div>
-                {/* picture 5 */}
-                <div className="mt-4 flex flex-col items-center self-center">
-                    <Image 
-                        src="/projects/gis_mapper/gis_mapper_6.jpg" 
-                        alt="GIS Mapper picture" 
-                        width={950} 
-                        height={950} 
-                        className="rounded-lg"
-                    />
-                    <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
-                        Switch city: this instance shows Beijing, China.
-                    </p>
-                </div>
-                {/* Algorithms: Dijkstra */}
-                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Algorithms: Dijkstra</h2>
+                {/* Content Rewrite */}
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Rewrite Content</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    The software implements Dijkstra&apos;s algorithm to find the shortest path between two points. It uses a priority queue to efficiently select the next point to explore and updates the distances of neighboring points dynamically. This algorithm is designed to handle large maps efficiently, making it suitable for real-world applications.
+                    Rewriting content follows the same flow as rewriting the outline. An example is below:
                 </p>
+                <div className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    <div className="font-bold">User:</div> 
+                    <i> 对于“部分区域的供水管网老化，导致水质下降”，请用数据或资料支撑 | For the statement that &quot;the aging of water supply networks in some areas has led to a decline in water quality&quot;, please support it with data or materials</i>
+                </div>
+                <div className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    <div className="font-bold">Agent:</div> 
+                    <div>(Updates the paragraph that the user pointed out, and rewrites it according to the request.)</div>
+                </div>
+                {/* picture */}
+                <div className="mt-4 flex flex-col items-center self-center">
+                    <Image 
+                        src="/projects/planning_agent/plagt_rewrite.jpg" 
+                        alt="Picture" 
+                        width={950} 
+                        height={950} 
+                        className="rounded-lg"
+                    />
+                    <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
+                        How the rewrite section works: user enters revision requirements.
+                    </p>
+                </div>
+                <div className="mt-4 flex flex-col items-center self-center">
+                    <Image 
+                        src="/projects/planning_agent/plagt_rewrite_after.jpg" 
+                        alt="Picture" 
+                        width={950} 
+                        height={950} 
+                        className="rounded-lg"
+                    />
+                    <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
+                        How the rewrite section works: update after user feedback.
+                    </p>
+                <div className="text-wz-text-color mt-4 font-wf-theme text-lg">
+                    It is not limited to paragraph-by-paragraph editing; users can also select several paragraphs to redo together, or even rewrite everything.
+                </div>
+                </div>
+                {/* Customized DB */}
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Customized Knowledge Base / External Documentation</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    By planning an efficient data structure in the loadMap function and utilizing the STL library wisely, the software finds the shortest path between two points in a very short time—even on a map with over 10,000 points, such as in New York City or Tokyo. Typically, it takes less than 0.1 seconds to determine the path. All test cases for two-point navigation are passed, as shown below.
+                    It is not limited to letting the AI select external reference resources. Users can assign fixed knowledge bases in the background and upload their own files, similar to attachments in major LLM chat platforms.
                 </p>
                 {/* picture 6 */}
                 <div className="mt-4 flex flex-col items-center self-center">
                     <Image 
-                        src="/projects/gis_mapper/gis_mapper_7.jpg" 
-                        alt="GIS Mapper picture" 
+                        src="/projects/planning_agent/plagt_db_selection.jpg" 
+                        alt="Picture" 
                         width={950} 
                         height={950} 
                         className="rounded-lg"
                     />
                     <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
-                        All test cases passed for Dijkstra&apos;s algorithm.
+                        Users can decide what to include in the attachments.
                     </p>
                 </div>
-                {/* Algorithm: Traveling Salesman Problem */}
-                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Algorithm: Traveling Salesman Problem</h2>
+                {/* Final */}
+                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">Finish</h2>
                 <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    The software also implements a solution for a modified Traveling Salesman Problem, called the Traveling Delivery Problem (TDP), using a mixed approach. It first opened 64 threads (on an 8-core computer) to run different greedy algorithms that calculate feasible paths between all points.
+                    Of course, the platform supports downloading the generated report.
                 </p>
-                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    Then, based on the 64 results, it performs simulated annealing to find a globally optimized solution. Finally, depending on the remaining time, the software runs 2-opt or 3-opt to further optimize the path locally.
-                </p>
-                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    Take London as an example: if there are approximately 260 delivery points (130 × 2) in the city (with some overlaps), the optimized time will be around 37 hours (133214 seconds). It may seem like a huge number, but considering the density of points in such a city, it is extremely fast!
-                </p>
-                {/* picture 7 */}
-                <div className="mt-4 flex flex-col items-center self-center">
-                    <Image 
-                        src="/projects/gis_mapper/gis_mapper_8.jpg" 
-                        alt="GIS Mapper picture" 
-                        width={950} 
-                        height={950} 
-                        className="rounded-lg"
-                    />
-                    <Image 
-                        src="/projects/gis_mapper/gis_mapper_9.jpg" 
-                        alt="GIS Mapper picture" 
-                        width={950} 
-                        height={950} 
-                        className="rounded-lg"
-                    />
-                    <p className="mt-2 text-center text-wz-text-color font-wf-theme text-lg">
-                        An extreme TDP case: 260 points in London.
-                    </p>
-                </div>
-                {/* What's Next */}
-                <h2 className="text-2xl font-bold text-wz-main-color font-wf-title mt-8">What&apos;s Next</h2>
-                <p className="text-wz-text-color mt-4 font-wf-theme text-lg">
-                    Currently, the software serves as a proof of concept for map navigation and delivery optimization. In the future, we plan to enhance the software with the following features:
-                </p>
-                <ul className="list-disc pl-5 mt-4 text-wz-text-color font-wf-theme text-lg">
-                    <li>Add AI suggestions based on the navigation path and real-time information (e.g., weather conditions).</li>
-                    <li>Fetch real-time traffic data for each city and display it within the graphics.</li>
-                    <li>Add a voice broadcast function.</li>
-                </ul>
             </div>
         </section>
     );
