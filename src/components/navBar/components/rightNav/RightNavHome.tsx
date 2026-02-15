@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ProfileNav from "../../ui/ProfileNav";
 import { NAV_LINKS_HOME } from '../../data/constants';
+import AppletTagWithDropdown from "../applet/AppletTagWithDropdown";
 
 // interface RightNavHomeProps {
 //     path: string;
@@ -20,7 +20,7 @@ const RightNavHome = () => {
 
                 </Link>
             ))}
-            <ProfileNav small={false}/>
+            <AppletTagWithDropdown />
         </div>
     );
 };

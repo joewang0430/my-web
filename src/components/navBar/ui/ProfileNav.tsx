@@ -1,3 +1,6 @@
+// This component will be abandoned
+
+
 import Link from 'next/link';
 
 interface ProfileNavProps {

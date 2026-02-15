@@ -9,7 +9,7 @@ const NameNav = ({page}: NameNavProps) => {
     if (page === "home") {
         return (
             <div className="relative group">
-                <Link href="#homemain" className="py-5 px-3 text-2xl text-wz-classic-blue dark:text-wz-classic-green hover:text-wz-secondary-blue dark:hover:text-wz-secondary-green"> 
+                <Link href="#homemain" className="py-5 px-3 text-2xl text-wz-classic-blue dark:text-wz-classic-green hover:mouse-cursor"> 
                     Jue Wang
                 </Link>
             </div>
