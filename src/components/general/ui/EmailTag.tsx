@@ -4,7 +4,7 @@ import Link from "next/link";
 const EmailTag = () => {
   return (
     <Link
-      href="mailto:joewj0430@gmail.com"
+      href="mailto:icedeverjoe@outlook.com"
       target="_blank"
       rel="noopener noreferrer"
       className="

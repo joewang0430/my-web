@@ -87,10 +87,10 @@ const About = () => {
                     <div className="flex text-lg mt-4">
                         <h2 className="font-wf-title text-wz-main-color font-bold">E-mail:&nbsp;</h2>
                         <Link
-                            href="mailto:jueee.wang@mail.utoronto.ca"
+                            href="mailto:icedeverjoe@outlook.com"
                             className="font-wf-title text-wz-text-color hover:underline hover:text-wz-secondary-color"
                             >
-                            jueee.wang@mail.utoronto.ca
+                            icedeverjoe@outlook.com
                         </Link>
                     </div>
                     <div className="flex text-wz-text-color text-lg">
