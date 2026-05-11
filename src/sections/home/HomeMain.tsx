@@ -65,8 +65,8 @@ const HomeMain = () => {
                 </div>
 
                 {/* Right Column: Figure/Image Placeholder */}
-                <div className="hidden lg:flex w-full lg:w-1/2 items-stretch justify-end self-stretch">
-                    <div className="relative w-full h-full min-h-[520px]">
+                <div className="hidden lg:flex w-full lg:w-[46%] items-stretch justify-end self-stretch">
+                    <div className="relative w-full h-full min-h-[480px]">
                         {/* Light mode image */}
                         <Image
                             src="/main_portrait.png"
