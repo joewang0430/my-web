@@ -39,7 +39,7 @@ const HomeMain = () => {
  
     return (
         <section id="homemain" className="flex items-center justify-center bg-wz-bg-color h-screen">
-            <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between max-w-5xl mt-12">
+            <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-stretch justify-between max-w-5xl mt-12">
                 {/* Left Column: Introductory Text */}
                 <div className="w-full lg:w-1/2 flex flex-col justify-center mb-8 lg:mb-0">
                     <h1 className="text-6xl font-bold text-wz-main-color font-funnel-display">
@@ -65,23 +65,25 @@ const HomeMain = () => {
                 </div>
 
                 {/* Right Column: Figure/Image Placeholder */}
-                <div className="hidden lg:flex w-full lg:w-1/2 items-center justify-center">
-                    {/* Light mode image */}
-                    <Image
-                        src="/main1.png"
-                        alt="Main image"
-                        width={256}
-                        height={256}
-                        className="rounded-lg dark:hidden"
-                    />
-                    {/* Dark mode image */}
-                    <Image
-                        src="/main2_1.png"
-                        alt="Main image (dark mode)"
-                        width={256}
-                        height={256}
-                        className="rounded-lg hidden dark:block"
-                    />
+                <div className="hidden lg:flex w-full lg:w-1/2 items-stretch justify-end self-stretch">
+                    <div className="relative w-full h-full min-h-[520px]">
+                        {/* Light mode image */}
+                        <Image
+                            src="/main_portrait.png"
+                            alt="Main image"
+                            fill
+                            sizes="(min-width: 1024px) 50vw, 100vw"
+                            className="object-contain dark:hidden"
+                        />
+                        {/* Dark mode image */}
+                        <Image
+                            src="/main_portrait.png"
+                            alt="Main image (dark mode)"
+                            fill
+                            sizes="(min-width: 1024px) 50vw, 100vw"
+                            className="object-contain hidden dark:block"
+                        />
+                    </div>
                 </div>
             </div>
             <style jsx>{`

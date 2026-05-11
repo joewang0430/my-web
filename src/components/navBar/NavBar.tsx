@@ -29,7 +29,7 @@ const NavBar = () => {
     }, [pathname]);
 
     return (
-        <header className="fixed top-0 w-full bg-wz-light-gray dark:bg-wz-classic-black text-wz-text-black dark:text-wz-classic-white z-50">
+        <header className="fixed top-0 w-full bg-wz-bg-color text-wz-text-black dark:text-wz-classic-white z-50">
             <nav className="container mx-auto flex justify-between items-center px-2">
                 <LeftNav page={pageName} />
 

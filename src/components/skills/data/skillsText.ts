@@ -23,7 +23,7 @@ export const FRAMEWORKS_TOOLS = [
     "Ollama",
     "PyTorch",
     "React.js",
-    "Tailwind CSS",
+    "HTML/CSS",
     "Unity",
     "WebSockets",
 ];
