@@ -38,7 +38,7 @@ const HomeMain = () => {
 
  
     return (
-        <section id="homemain" className="flex items-center justify-center bg-wz-bg-color h-screen">
+        <section id="homemain" className="relative flex items-center justify-center bg-wz-bg-color h-screen">
             <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-stretch justify-between max-w-5xl mt-12">
                 {/* Left Column: Introductory Text */}
                 <div className="w-full lg:w-1/2 flex flex-col justify-center mb-8 lg:mb-0">
@@ -85,6 +85,25 @@ const HomeMain = () => {
                         />
                     </div>
                 </div>
+            </div>
+            <div className="absolute bottom-3 inset-x-0 flex justify-center px-4 pointer-events-none">
+                <p className="inline-flex items-center gap-1.5 text-xs text-gray-400 font-wf-theme text-center">
+                    <span
+                        className="inline-block h-[0.85rem] w-[0.95rem] bg-gray-500 align-middle"
+                        aria-hidden="true"
+                        style={{
+                            WebkitMaskImage: "url('/wzd.svg')",
+                            maskImage: "url('/wzd.svg')",
+                            WebkitMaskRepeat: "no-repeat",
+                            maskRepeat: "no-repeat",
+                            WebkitMaskSize: "contain",
+                            maskSize: "contain",
+                            WebkitMaskPosition: "center",
+                            maskPosition: "center",
+                        }}
+                    />
+                    <span>WZD #001 | © 2026 Jue Wang.</span>
+                </p>
             </div>
             <style jsx>{`
                 @keyframes flicker {
