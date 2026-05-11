@@ -102,7 +102,7 @@ const HomeMain = () => {
                             maskPosition: "center",
                         }}
                     />
-                    <span>WZD #001 | © 2026 Jue Wang.</span>
+                    <span>WZD #001 | © 2025-2026 Jue Wang.</span>
                 </p>
             </div>
             <style jsx>{`
