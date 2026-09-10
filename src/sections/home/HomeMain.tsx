@@ -36,6 +36,8 @@ const TypingEffect = ({ text, speed = 50, startDelay = 0 }: { text: string; spee
 
 const HomeMain = () => {
 
+    const currentYear = new Date().getFullYear();
+
  
     return (
         <section id="homemain" className="relative flex items-center justify-center bg-wz-bg-color h-screen">
@@ -102,7 +104,7 @@ const HomeMain = () => {
                             maskPosition: "center",
                         }}
                     />
-                    <span>WZD #001 | © 2025-2026 Jue Wang.</span>
+                    <span>WZD #001 | © 2025-{currentYear} Jue Wang.</span>
                 </p>
             </div>
             <style jsx>{`
