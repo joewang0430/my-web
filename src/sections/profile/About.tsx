@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaArrowDown } from "react-icons/fa";
 
 const About = () => {
     return (
@@ -14,7 +13,16 @@ const About = () => {
                     <h1 className="text-5xl font-bold text-wz-main-color font-funnel-display">Jue Wang 王珏</h1>
                     
                     <p className="text-wz-text-color mt-8 font-wf-theme text-lg">
-                        I&apos;m a computer engineering undergraduate (3rd year ECE) at University of Toronto. My work focuses on software architecture, algorithm design, and machine learning. 
+                        I&apos;m a computer engineering undergraduate (4th year ECE) at University of Toronto. My&nbsp;
+                        <Link
+                            href="/research"
+                            className="font-wf-title text-wz-main-color font-bold hover:underline hover:text-wz-secondary-color"
+                            >
+                            research
+                        </Link>
+                        <span>
+                            &nbsp;and work focus on embodied agents, long-time memory system, and LLM architecture.
+                        </span>
                     </p>
 
                     {/* <p className="text-lg mt-4">
@@ -34,7 +42,46 @@ const About = () => {
 
                     <p className="text-lg mt-4">
                         <span className="font-wf-theme text-wz-text-color">
-                            I can write .py .cpp .js .a .tsx ... files, along with some frameworks. Maybe you&apos;ve grown tired of hearing these buzzwords in other resumes so I won&apos;t say anything more than that.
+                            I&apos;m currently working as a research assistant under the supervision of Prof.&nbsp;
+                        </span>
+                        <Link
+                            href="https://www.eecg.utoronto.ca/~salma/about/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-wf-title text-wz-main-color font-bold hover:underline hover:text-wz-secondary-color"
+                            >
+                            Salma Emara
+                        </Link>
+                        <span className="font-wf-theme text-wz-text-color">
+                            &nbsp;on
+                        </span>
+                        <Link
+                            href="https://askalan.engineering.utoronto.ca"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-wf-title text-wz-main-color font-bold hover:underline hover:text-wz-secondary-color"
+                            >
+                            &nbsp;AskAlan
+                        </Link>
+                        <span className="font-wf-theme text-wz-text-color">
+                            , a virtual teaching assistant.
+                        </span>
+                    </p>
+
+                    <p className="text-lg mt-4">
+                        <span className="font-wf-theme text-wz-text-color">
+                            I&apos;m also doing my capstone project with Prof.&nbsp;
+                        </span>
+                        <Link
+                            href="https://www.bereyhi.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-wf-title text-wz-main-color font-bold hover:underline hover:text-wz-secondary-color"
+                            >
+                            Ali Bereyhi
+                        </Link>
+                        <span className="font-wf-theme text-wz-text-color">
+                            , building a general-purpose intelligent edge device that runs lightweight LLMs and can be configured for different IoT applications through natural language.
                         </span>
                     </p>
 
@@ -47,7 +94,7 @@ const About = () => {
                             There are also a bunch of
                         </span>
                         <Link
-                            href="#projects"
+                            href="/projects"
                             className="font-wf-title text-wz-main-color font-bold hover:underline hover:text-wz-secondary-color"
                             >
                             &nbsp;projects
@@ -78,24 +125,14 @@ const About = () => {
                         </span>
                     </p> */}
 
-                     <p className="text-lg mt-4">
-                        <span className="font-wf-theme text-wz-text-color">
-                            Currently, I&apos;m struggling with my third year courses as I just messed up with my first CSC343 midterm.
-                        </span>
-                    </p>
-
                     <div className="flex text-lg mt-4">
                         <h2 className="font-wf-title text-wz-main-color font-bold">E-mail:&nbsp;</h2>
                         <Link
-                            href="mailto:icedeverjoe@outlook.com"
+                            href="mailto:jueee.wang@mail.utoronto.ca"
                             className="font-wf-title text-wz-text-color hover:underline hover:text-wz-secondary-color"
                             >
-                            icedeverjoe@outlook.com
+                            jueee.wang@mail.utoronto.ca
                         </Link>
-                    </div>
-                    <div className="flex text-wz-text-color text-lg">
-                        <h2 className="font-wf-title text-wz-main-color font-bold">Location:&nbsp;</h2>
-                        <h2 className="font-wf-theme text-wz-text-color">Toronto, Canada / Hangzhou, China</h2>
                     </div>
                 </div>
                 
@@ -111,18 +148,6 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="w-full flex justify-center py-4">
-                <a
-                    onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="cursor-pointer flex flex-col items-center text-wz-main-color"
-                >
-                    <span className="text-lg">Scroll Down For More</span>
-                    <FaArrowDown size={24} className="mt-2 animate-bounce" />
-                </a>
-            </div>
         </section>
     );
 };

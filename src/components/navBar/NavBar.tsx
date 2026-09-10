@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import RightNav from "./components/RightNav";
 import RightMenu from "./components/RightMenu";
 import LeftNav from "./components/LeftNav";
+import { PROFILE_ROUTES } from "./data/constants";
 
 const NavBar = () => {
     const pathname = usePathname();
@@ -13,7 +14,7 @@ const NavBar = () => {
     useEffect(() => {
         if (pathname === "/") {
             setpageName("home");
-        } else if (pathname === "/profile") {
+        } else if (PROFILE_ROUTES.includes(pathname)) {
             setpageName("profile");
         } else if (pathname === "/gallery") {
             setpageName("gallery");

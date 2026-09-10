@@ -20,7 +20,7 @@ const LeftNav = ({page}: LeftNavProps) => {
     } else if (page === "projectsSubpage") {
         return (
             <div className="py-5 px-3 relative group">
-                <Link href="/profile#projects" className="py-5 px-3 relative group text-2xl font-wf-title text-wz-main-color hover:text-wz-secondary-color">
+                <Link href="/projects" className="py-5 px-3 relative group text-2xl font-wf-title text-wz-main-color hover:text-wz-secondary-color">
                     <FaArrowLeft className="inline mr-1" />&nbsp;Projects
                 </Link>
             </div>

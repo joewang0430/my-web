@@ -1,11 +1,11 @@
 export const NAV_LINKS_HOME = [
     {
         name: "About Me",
-        href: "/profile#about",
+        href: "/about",
     },
     {
         name: "Projects",
-        href: "/profile#projects",
+        href: "/projects",
     },
     // {
     //     name: "Contact",
@@ -53,27 +53,23 @@ export const NAV_LINKS_HOME_SUBPAGE = [
 
 export const NAV_LINKS_PROFILE = [
     {
-        name: "<< Home",
-        href: "/",
-    },
-    {
         name: "About",
-        href: "#about",
+        href: "/about",
         id: "about",
     },
     {
-        name: "Skills",
-        href: "#skills",
-        id: "skills",
+        name: "Research",
+        href: "/research",
+        id: "research",
     },
     {
-        name: "Experience",
-        href: "#experience",
-        id: "experience",
+        name: "Awards",
+        href: "/awards",
+        id: "awards",
     },
     {
         name: "Projects",
-        href: "#projects",
+        href: "/projects",
         id: "projects",
     },
     // {
@@ -81,6 +77,8 @@ export const NAV_LINKS_PROFILE = [
     //     href: "/resume.pdf",
     // },
 ];
+
+export const PROFILE_ROUTES: string[] = NAV_LINKS_PROFILE.map(({ href }) => href);
 
 export const NAV_LINKS_GALLERY = [
     {
@@ -120,8 +118,8 @@ export const NAV_LINKS_GALLERY_SUBPAGE = [
 
 export const NAV_LINKS_PROJECTS_SUBPAGE = [
     {
-        name: "<< Profile",
-        href: "/profile#projects",
+        name: "Projects",
+        href: "/projects",
     },
 
 ];
