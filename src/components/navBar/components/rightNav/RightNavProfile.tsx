@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import HomeNav from "../../ui/HomeNav";
+import CvLink from "../../ui/CvLink";
 import { NAV_LINKS_PROFILE } from '../../data/constants';
 
 const RightNavProfile = () => {
@@ -31,6 +32,7 @@ const RightNavProfile = () => {
                     )}
                 </Link>
             ))}
+            <CvLink variant="nav" />
             <HomeNav small={false}/>
         </div>
     );

@@ -9,9 +9,10 @@ interface NavItem {
 interface RightMenuListProps {
     list: NavItem[];
     title?: string;
+    children?: React.ReactNode;
 };
 
-const RightMenuList = ({list, title = "Menu"}: RightMenuListProps) => {
+const RightMenuList = ({list, title = "Menu", children}: RightMenuListProps) => {
     return (
         <div className="absolute top-16 right-0 bg-wz-classic-white dark:bg-wz-classic-black w-40 py-2">
             <div className="px-4 py-2 text-sm font-bold text-wz-main-color border-b border-gray-200 dark:border-gray-700">
@@ -24,6 +25,7 @@ const RightMenuList = ({list, title = "Menu"}: RightMenuListProps) => {
                     </p>
                 </Link>
             ))}
+            {children}
         </div>
     );
 };

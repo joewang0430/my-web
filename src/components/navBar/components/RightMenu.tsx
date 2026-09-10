@@ -7,6 +7,7 @@ import RightMenuList from "./rightMenu/RightMenuList";
 import AppletMenuList from "./applet/AppletMenuList";
 import MenuTag from "../ui/MenuTag";
 import ThemeSwitch from "../ui/ThemeSwitch";
+import CvLink from "../ui/CvLink";
 import { NAV_LINKS_GALLERY, NAV_LINKS_GALLERY_SUBPAGE, NAV_LINKS_HOME, NAV_LINKS_HOME_SUBPAGE, NAV_LINKS_PROFILE, NAV_LINKS_PROJECTS_SUBPAGE} from "../data/constants";
 
 
@@ -59,7 +60,11 @@ const RightMenu = ({page}: RightMenuProps) => {
                 <HomeNav small={true}/>
                 <MenuTag onClick={toggleMenu} isActive={isOpen} />
 
-                {isOpen && (<RightMenuList list={NAV_LINKS_PROFILE} />)}
+                {isOpen && (
+                    <RightMenuList list={NAV_LINKS_PROFILE}>
+                        <CvLink variant="menu" />
+                    </RightMenuList>
+                )}
             </div>
         );
 
